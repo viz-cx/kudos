@@ -12,14 +12,15 @@ struct KudosApp: App {
         let node = NodeClient()
         let backend = BackendClient()
         let vault = CredentialVault()
+        let onboarding = LiveOnboardingService(backend: backend)
         let session = SessionStore(
             account: LiveAccountService(node: node),
-            onboarding: LiveOnboardingService(backend: backend),
+            onboarding: onboarding,
             kudos: LiveKudosService(node: node),
             vault: vault
         )
         self._session = State(initialValue: session)
-        self.onboarding = LiveOnboardingService(backend: backend)
+        self.onboarding = onboarding
         self.people = LivePeopleSearchService(backend: backend)
         self.vault = vault
         self.backend = backend
