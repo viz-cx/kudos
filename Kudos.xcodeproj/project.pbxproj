@@ -11,6 +11,7 @@
 		0A76A2867C84B8AE2C6A017F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F56785470A2A47FC23AB3E /* Person.swift */; };
 		0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */; };
 		114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */; };
+		166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F1863C2909578AD72BFB0 /* RootView.swift */; };
 		1AB49FB300887BF15E4B13C5 /* KudosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AE478EA30012FECF9808DD /* KudosService.swift */; };
 		1DC240A5DD7B9E781B82AB6F /* WarmthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BBC9D9D7E36C1FB9C197F /* WarmthTests.swift */; };
 		1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */; };
@@ -52,6 +53,7 @@
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
 		F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */; };
 		FB3867F24E9559F163621D79 /* ProfileQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */; };
+		FD4C7B2F7D74D7204FC53F1A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840053D2B0BD072636B1D9B3 /* MainTabView.swift */; };
 		FD4E2550084034295ADF7BCA /* InviteRedeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,10 +93,12 @@
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
 		6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModelTests.swift; sourceTree = "<group>"; };
 		821586CBA220C706372DA2C2 /* RestoreAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreAccessView.swift; sourceTree = "<group>"; };
+		840053D2B0BD072636B1D9B3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		848ABF8131C8EB340702F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModel.swift; sourceTree = "<group>"; };
 		8B4A29D07B133518F99450CE /* AppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorTests.swift; sourceTree = "<group>"; };
 		8EF8D9950352279112E9240E /* SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
+		8F1F1863C2909578AD72BFB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchService.swift; sourceTree = "<group>"; };
 		9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
 		9B7B911755DDEB97E84FECF9 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 		6151442BAE672408190DF88D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				840053D2B0BD072636B1D9B3 /* MainTabView.swift */,
+				8F1F1863C2909578AD72BFB0 /* RootView.swift */,
 				418DA05BAE1DB34389669214 /* Kudos */,
 				E4785175F86607F8A03FF52D /* Onboarding */,
 				4F3A909E13F9A1130A711731 /* Profile */,
@@ -427,6 +433,7 @@
 				1AB49FB300887BF15E4B13C5 /* KudosService.swift in Sources */,
 				C362D10757372E6E35223587 /* KudosView.swift in Sources */,
 				114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */,
+				FD4C7B2F7D74D7204FC53F1A /* MainTabView.swift in Sources */,
 				A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */,
 				F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */,
 				723AFD1ABE3490D505F36B4C /* OnboardingView.swift in Sources */,
@@ -439,6 +446,7 @@
 				0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */,
 				9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */,
 				42C3A996B7D2AED2CD43A26E /* RestoreAccessView.swift in Sources */,
+				166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */,
 				BB82282EAB009B543F074D0D /* SecureRandom.swift in Sources */,
 				D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */,
 				53F078EA4CE2200B43A04BA5 /* SettingsView.swift in Sources */,
