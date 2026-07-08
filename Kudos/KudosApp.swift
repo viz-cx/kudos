@@ -9,9 +9,28 @@ struct KudosApp: App {
     private let backend: BackendClient
 
     init() {
+        let vault = CredentialVault()
+
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-UITEST_DEMO") {
+            let onboarding = PreviewOnboardMock()
+            let session = SessionStore(
+                account: PreviewAccountMock(),
+                onboarding: onboarding,
+                kudos: PreviewKudosMock(),
+                vault: vault
+            )
+            self._session = State(initialValue: session)
+            self.onboarding = onboarding
+            self.people = PreviewPeopleMock()
+            self.vault = vault
+            self.backend = BackendClient()
+            return
+        }
+        #endif
+
         let node = NodeClient()
         let backend = BackendClient()
-        let vault = CredentialVault()
         let onboarding = LiveOnboardingService(backend: backend)
         let session = SessionStore(
             account: LiveAccountService(node: node),

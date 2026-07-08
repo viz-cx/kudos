@@ -36,6 +36,7 @@
 		965D22B2F690F85D76306AB1 /* PreviewMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */; };
 		9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3470A74AF052CA161320AA /* RecipientField.swift */; };
 		A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */; };
+		A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */; };
 		AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */; };
 		B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */; };
 		B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */; };
@@ -111,6 +112,7 @@
 		B3AE478EA30012FECF9808DD /* KudosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosService.swift; sourceTree = "<group>"; };
 		B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
+		C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFlowUITests.swift; sourceTree = "<group>"; };
 		CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
 		D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		BDE0B907836F03A9616067EA /* KudosUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */,
 				B303003CDF9FBF8844B8E02E /* KudosUITests.swift */,
 			);
 			path = KudosUITests;
@@ -460,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */,
 				7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
