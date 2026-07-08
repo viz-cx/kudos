@@ -1,0 +1,60 @@
+{
+  "originHash" : "1bd0fb6a89c3bed7f10fc6207070186057f857f8b7fe3ecc85ec9777252d7264",
+  "pins" : [
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "revision" : "5e886430238944c7200fc9e10dbf2d9550dba865",
+        "version" : "2.5.2"
+      }
+    },
+    {
+      "identity" : "confettiswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/simibac/ConfettiSwiftUI",
+      "state" : {
+        "revision" : "f45961f97bbae6fff6e2e64546fea0189425ad92",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "ordereddictionary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukaskubanek/OrderedDictionary.git",
+      "state" : {
+        "revision" : "06fd5ea31a9888769b3bae03e4d134da1cf69c50",
+        "version" : "4.0.2"
+      }
+    },
+    {
+      "identity" : "secp256k1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/greymass/secp256k1.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f5babfbb95166ac3bca64b09adefc0dcda0b5c52"
+      }
+    },
+    {
+      "identity" : "viz-swift-lib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/viz-blockchain/viz-swift-lib",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a793a878b99d3d8d336c819d0449f8af86940a9e"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51E65D4C69F1CFD8197134DD /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6CEE31FC0A024BE35968013D /* KeychainAccess */; };
+		673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E1F261A9C748B2EB404B87 /* KudosApp.swift */; };
+		7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B303003CDF9FBF8844B8E02E /* KudosUITests.swift */; };
+		8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0E093C55BEE284DBAF09F6 /* VIZ */; };
+		B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D3C84DBA30E71B389F9F3 /* KudosTests.swift */; };
+		D0B62CD115EEA33B0A7089A5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1D56A5608E013C740CBF123A /* CodeScanner */; };
+		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87B47B8F744B26205559AED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8822A449018739F245E12239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B263BE595A697FCEC3BF833D;
+			remoteInfo = Kudos;
+		};
+		BBD97CC755B20A18C0BC5AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8822A449018739F245E12239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B263BE595A697FCEC3BF833D;
+			remoteInfo = Kudos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		251D3C84DBA30E71B389F9F3 /* KudosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosTests.swift; sourceTree = "<group>"; };
+		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BAA8A4BB7708D688A108B8 /* KudosTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848ABF8131C8EB340702F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B303003CDF9FBF8844B8E02E /* KudosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosUITests.swift; sourceTree = "<group>"; };
+		EE5EF269744E00364476B629 /* KudosUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E1F261A9C748B2EB404B87 /* KudosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E80462A816E85D7D9D115153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */,
+				51E65D4C69F1CFD8197134DD /* KeychainAccess in Frameworks */,
+				D0B62CD115EEA33B0A7089A5 /* CodeScanner in Frameworks */,
+				DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28969743EFCE38715059B34A /* Kudos */ = {
+			isa = PBXGroup;
+			children = (
+				848ABF8131C8EB340702F30F /* Info.plist */,
+				F2E1F261A9C748B2EB404B87 /* KudosApp.swift */,
+			);
+			path = Kudos;
+			sourceTree = "<group>";
+		};
+		A3489569D7F8F482AFC598CA = {
+			isa = PBXGroup;
+			children = (
+				28969743EFCE38715059B34A /* Kudos */,
+				A9BAC299D203C264207CF8E9 /* KudosTests */,
+				BDE0B907836F03A9616067EA /* KudosUITests */,
+				C67EA0F3912B381C9AC41FDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9BAC299D203C264207CF8E9 /* KudosTests */ = {
+			isa = PBXGroup;
+			children = (
+				251D3C84DBA30E71B389F9F3 /* KudosTests.swift */,
+			);
+			path = KudosTests;
+			sourceTree = "<group>";
+		};
+		BDE0B907836F03A9616067EA /* KudosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B303003CDF9FBF8844B8E02E /* KudosUITests.swift */,
+			);
+			path = KudosUITests;
+			sourceTree = "<group>";
+		};
+		C67EA0F3912B381C9AC41FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E628E5A6D3AAD74C9F43E0A /* Kudos.app */,
+				56BAA8A4BB7708D688A108B8 /* KudosTests.xctest */,
+				EE5EF269744E00364476B629 /* KudosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		771F932BDD30FDD199591F4F /* KudosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72EEF9AE9127830F1A806349 /* Build configuration list for PBXNativeTarget "KudosUITests" */;
+			buildPhases = (
+				A4433E5FBBA8EBD3EE0E30B3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AAF494C3126D9F3894FEA6 /* PBXTargetDependency */,
+			);
+			name = KudosUITests;
+			packageProductDependencies = (
+			);
+			productName = KudosUITests;
+			productReference = EE5EF269744E00364476B629 /* KudosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B263BE595A697FCEC3BF833D /* Kudos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FFD8CC7A9DF6C367D6CEBD /* Build configuration list for PBXNativeTarget "Kudos" */;
+			buildPhases = (
+				98345B351BA1EB64B913E39A /* Sources */,
+				E80462A816E85D7D9D115153 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kudos;
+			packageProductDependencies = (
+				3F0E093C55BEE284DBAF09F6 /* VIZ */,
+				6CEE31FC0A024BE35968013D /* KeychainAccess */,
+				1D56A5608E013C740CBF123A /* CodeScanner */,
+				3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */,
+			);
+			productName = Kudos;
+			productReference = 2E628E5A6D3AAD74C9F43E0A /* Kudos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA2AC40A0D98B4BA58A1555 /* KudosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2003B56EEB6A1D58B679EDEB /* Build configuration list for PBXNativeTarget "KudosTests" */;
+			buildPhases = (
+				CC2AFBE6DE033D4137F16CDA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B969262AB04C000E733F2D9 /* PBXTargetDependency */,
+			);
+			name = KudosTests;
+			packageProductDependencies = (
+			);
+			productName = KudosTests;
+			productReference = 56BAA8A4BB7708D688A108B8 /* KudosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8822A449018739F245E12239 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					771F932BDD30FDD199591F4F = {
+						TestTargetID = B263BE595A697FCEC3BF833D;
+					};
+				};
+			};
+			buildConfigurationList = B77C19A951DCD6A72E99BEF6 /* Build configuration list for PBXProject "Kudos" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A3489569D7F8F482AFC598CA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				17852657E34A84F6BAFFFA18 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				F24BC7B24702EB15B50F4A91 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				B253FF65D5017DF1762D4C03 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				76F4BF4BE0678AFDEB7BD2C6 /* XCRemoteSwiftPackageReference "viz-swift-lib" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C67EA0F3912B381C9AC41FDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B263BE595A697FCEC3BF833D /* Kudos */,
+				CEA2AC40A0D98B4BA58A1555 /* KudosTests */,
+				771F932BDD30FDD199591F4F /* KudosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98345B351BA1EB64B913E39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4433E5FBBA8EBD3EE0E30B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AFBE6DE033D4137F16CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14AAF494C3126D9F3894FEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B263BE595A697FCEC3BF833D /* Kudos */;
+			targetProxy = 87B47B8F744B26205559AED6 /* PBXContainerItemProxy */;
+		};
+		6B969262AB04C000E733F2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B263BE595A697FCEC3BF833D /* Kudos */;
+			targetProxy = BBD97CC755B20A18C0BC5AD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19541AE2FC1B24384C13C4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		329E4933DB9072B5FBF7107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Kudos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.kudos;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FF13341B50B89DB2BBD536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		5673A7300160CE10D082EE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.KudosTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kudos.app/Kudos";
+			};
+			name = Debug;
+		};
+		581ED75E2125AB1F0A5B818B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.KudosUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kudos;
+			};
+			name = Debug;
+		};
+		63470683BA8292A9BFD91C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.KudosUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kudos;
+			};
+			name = Release;
+		};
+		81B20D0CA6BC38786FDA4C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.KudosTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kudos.app/Kudos";
+			};
+			name = Release;
+		};
+		B19AFB2660E62D9FD212EA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Kudos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cx.viz.kudos;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2003B56EEB6A1D58B679EDEB /* Build configuration list for PBXNativeTarget "KudosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5673A7300160CE10D082EE81 /* Debug */,
+				81B20D0CA6BC38786FDA4C6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		47FFD8CC7A9DF6C367D6CEBD /* Build configuration list for PBXNativeTarget "Kudos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19AFB2660E62D9FD212EA51 /* Debug */,
+				329E4933DB9072B5FBF7107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72EEF9AE9127830F1A806349 /* Build configuration list for PBXNativeTarget "KudosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581ED75E2125AB1F0A5B818B /* Debug */,
+				63470683BA8292A9BFD91C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B77C19A951DCD6A72E99BEF6 /* Build configuration list for PBXProject "Kudos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19541AE2FC1B24384C13C4A2 /* Debug */,
+				4FF13341B50B89DB2BBD536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17852657E34A84F6BAFFFA18 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		76F4BF4BE0678AFDEB7BD2C6 /* XCRemoteSwiftPackageReference "viz-swift-lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/viz-blockchain/viz-swift-lib";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B253FF65D5017DF1762D4C03 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		F24BC7B24702EB15B50F4A91 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D56A5608E013C740CBF123A /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17852657E34A84F6BAFFFA18 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F24BC7B24702EB15B50F4A91 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		3F0E093C55BEE284DBAF09F6 /* VIZ */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76F4BF4BE0678AFDEB7BD2C6 /* XCRemoteSwiftPackageReference "viz-swift-lib" */;
+			productName = VIZ;
+		};
+		6CEE31FC0A024BE35968013D /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B253FF65D5017DF1762D4C03 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8822A449018739F245E12239 /* Project object */;
+}
