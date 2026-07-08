@@ -18,6 +18,8 @@
     <string>1.0</string>
     <key>CFBundleVersion</key>
     <string>1</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Scan a friend's code to send them kudos.</string>
     <key>UILaunchScreen</key>
     <dict/>
 </dict>
