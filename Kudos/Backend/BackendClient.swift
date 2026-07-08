@@ -115,6 +115,7 @@ struct BackendClient: Sendable {
         case 200..<300: break
         case 409: throw AppError.usernameTaken
         case 400: throw AppError.invalidInvite
+        case 429: throw AppError.outOfAppreciation
         default: throw AppError.network
         }
     }
