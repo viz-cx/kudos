@@ -6,7 +6,7 @@ struct WarmthSlider: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Slider(value: $fraction, in: 0...max)
+            Slider(value: $fraction, in: 0...Swift.max(max, 0.0001))
                 .tint(.orange)
             HStack {
                 Text("a little").foregroundStyle(.secondary)

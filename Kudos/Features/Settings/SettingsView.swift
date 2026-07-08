@@ -40,11 +40,11 @@ struct SettingsView: View {
                 }
             }
             Section("Advanced") {
-                NavigationLink("Node settings") {
-                    Text("Node configuration coming soon.")
+                NavigationLink("Connection settings") {
+                    Text("Connection configuration coming soon.")
                         .foregroundStyle(.secondary)
                         .padding()
-                        .navigationTitle("Node settings")
+                        .navigationTitle("Connection settings")
                 }
             }
             Section {

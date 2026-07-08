@@ -3,7 +3,6 @@ import KeychainAccess
 actor CredentialVault {
     private let keychain = Keychain(service: "cx.viz.kudos")
         .accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: [.biometryAny])
-        .synchronizable(true)
 
     func load() -> Credentials? {
         guard let username = try? keychain.getString("username"),

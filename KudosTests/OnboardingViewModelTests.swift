@@ -59,27 +59,6 @@ struct OnboardingViewModelTests {
         #expect(vm.isWorking == false)
     }
 
-    // MARK: - Validation tests (restore)
-
-    @Test func restoreRejectsEmptyRecoveryCode() async {
-        let session = SessionStoreTests.makeTestStore()
-        let vm = OnboardingViewModel(session: session, onboarding: OnboardMock())
-        vm.recoveryCode = ""
-        await vm.restore()
-        #expect(vm.showError == true)
-        #expect(vm.errorText.isEmpty == false)
-    }
-
-    @Test func restoreWithCodeDelegatesToGuest() async {
-        let session = SessionStoreTests.makeTestStore()
-        let vm = OnboardingViewModel(session: session, onboarding: OnboardMock())
-        vm.recoveryCode = "someRecoveryCode"
-        await vm.restore()
-        // Currently delegates to continueAsGuest which calls demoCredentials
-        #expect(vm.showError == false)
-        #expect(session.phase == .active)
-    }
-
     // MARK: - continueAsGuest
 
     @Test func continueAsGuestSignsInAsDemo() async {

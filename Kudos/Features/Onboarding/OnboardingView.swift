@@ -4,7 +4,6 @@ struct OnboardingView: View {
     @Environment(SessionStore.self) private var session
     @State private var vm: OnboardingViewModel
     @State private var showInviteSheet = false
-    @State private var showRestoreSheet = false
 
     init(session: SessionStore, onboarding: any OnboardingProviding) {
         _vm = State(initialValue: OnboardingViewModel(session: session, onboarding: onboarding))
@@ -22,8 +21,6 @@ struct OnboardingView: View {
             VStack(spacing: 16) {
                 Button("I have an invite") { showInviteSheet = true }
                     .buttonStyle(.borderedProminent)
-                Button("Restore access") { showRestoreSheet = true }
-                    .buttonStyle(.bordered)
                 Button("Look around first") {
                     Task { await vm.continueAsGuest() }
                 }
@@ -34,9 +31,6 @@ struct OnboardingView: View {
         .padding()
         .sheet(isPresented: $showInviteSheet) {
             InviteRedeemView(vm: vm)
-        }
-        .sheet(isPresented: $showRestoreSheet) {
-            RestoreAccessView(vm: vm)
         }
         .alert("Something went wrong", isPresented: $vm.showError) {
             Button("OK", role: .cancel) { vm.showError = false }

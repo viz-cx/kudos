@@ -32,20 +32,18 @@ https://kudos.app/privacy
 
 ---
 
-## Reviewer Notes
+## App Store Review Notes
 
-**Demo path — "Look around first" (no invite required)**
+Demo access (no invite required):
+1. Launch the app
+2. On the welcome screen, tap "Look around first"
+3. You will be signed in with a demo account
+4. You'll see three tabs: Kudos (home), You (profile), Settings
+5. In Kudos tab: search for a recipient, adjust appreciation level, add a note, tap "Send kudos"
+6. In You tab: view your profile QR code
+7. In Settings: sign out, view connection settings
 
-1. Launch the app. The public **Activity Feed** loads immediately — no sign-in needed. Reviewers can scroll the feed to see live kudos sent by real users.
-2. Tap any kudo card to open the detail view.
-3. To test sending: tap **Sign In** → create a free account with any email address.
-4. After sign-in, tap the **Send Kudos** button (plus icon, bottom centre).
-5. Enter a recipient username (or tap **Scan Code** to open the QR scanner) and write a short appreciation message.
-6. Tap **Send** — the kudo appears immediately in the feed.
-
-**Camera permission** is requested only when the reviewer taps "Scan Code". Declining does not block any other functionality; the recipient's username can be typed instead.
-
-**No real-money transactions, no in-app purchases, no third-party sign-in.**
+Camera permission: Used only for scanning QR codes in the recipient search field (CodeScanner button). Not required for the main demo flow.
 
 ---
 
