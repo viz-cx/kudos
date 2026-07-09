@@ -19,4 +19,13 @@ actor CredentialVault {
         try? keychain.remove("username")
         try? keychain.remove("regularKey")
     }
+
+    #if DEBUG
+    /// Synchronously wipes stored credentials. Used only to give UI tests a clean slate on launch.
+    static func resetForTesting() {
+        let keychain = Keychain(service: "cx.viz.kudos")
+        try? keychain.remove("username")
+        try? keychain.remove("regularKey")
+    }
+    #endif
 }

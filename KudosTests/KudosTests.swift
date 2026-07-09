@@ -3,7 +3,7 @@ import Testing
 
 struct KudosTests {
     @Test func appErrorIsLocalizedError() {
-        let error = AppError.network("timeout")
+        let error = AppError.network
         #expect(error.localizedDescription.isEmpty == false)
     }
 }

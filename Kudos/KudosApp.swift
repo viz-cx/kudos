@@ -13,6 +13,7 @@ struct KudosApp: App {
 
         #if DEBUG
         if ProcessInfo.processInfo.arguments.contains("-UITEST_DEMO") {
+            CredentialVault.resetForTesting()
             let onboarding = PreviewOnboardMock()
             let session = SessionStore(
                 account: PreviewAccountMock(),
