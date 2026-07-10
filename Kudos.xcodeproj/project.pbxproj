@@ -42,6 +42,7 @@
 		7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B303003CDF9FBF8844B8E02E /* KudosUITests.swift */; };
 		8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0E093C55BEE284DBAF09F6 /* VIZ */; };
 		85EDAAE3B1D51DA392DD24B9 /* AccountSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */; };
+		927D94AE54A70722B854964A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634C74BF54D605126299E5A /* HomeView.swift */; };
 		9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE49D6290F28DA1E25B219 /* Credentials.swift */; };
 		965D22B2F690F85D76306AB1 /* PreviewMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */; };
 		9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3470A74AF052CA161320AA /* RecipientField.swift */; };
@@ -143,6 +144,7 @@
 		B303003CDF9FBF8844B8E02E /* KudosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosUITests.swift; sourceTree = "<group>"; };
 		B3AE478EA30012FECF9808DD /* KudosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosService.swift; sourceTree = "<group>"; };
 		B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoCard.swift; sourceTree = "<group>"; };
+		B634C74BF54D605126299E5A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		BAB624064A17A494A2FD1F4E /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		02761630032D8A81B1461F14 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B634C74BF54D605126299E5A /* HomeView.swift */,
 				F2EB4990B4F9EFB6D46935D0 /* HomeViewModel.swift */,
 			);
 			path = Home;
@@ -526,6 +529,7 @@
 				E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */,
 				5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */,
 				FBB75DA43397FAFEF5F2A4BD /* Greeting.swift in Sources */,
+				927D94AE54A70722B854964A /* HomeView.swift in Sources */,
 				636A22B13ED84DDE854988DF /* HomeViewModel.swift in Sources */,
 				FD4E2550084034295ADF7BCA /* InviteRedeemView.swift in Sources */,
 				58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */,
