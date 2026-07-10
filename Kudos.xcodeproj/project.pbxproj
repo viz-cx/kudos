@@ -62,11 +62,13 @@
 		D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5107182C903BEFE714B50A4 /* Warmth.swift */; };
 		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
 		E278E6CE1A8B19374C082923 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575718AC04C0FE5D4E6C5C19 /* AppError.swift */; };
+		E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB624064A17A494A2FD1F4E /* EmptyState.swift */; };
 		E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */; };
 		E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */; };
 		EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C492F8A7D8757D202B39C /* WarmthSlider.swift */; };
 		ED78272442B044FD22D0D2D4 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4487889DCCF31FDC2C831 /* Avatar.swift */; };
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
+		F60DAA052AA4BE6B03756B56 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2FAA35853A302E6722F30 /* SectionHeader.swift */; };
 		F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */; };
 		FB3867F24E9559F163621D79 /* ProfileQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */; };
 		FD4C7B2F7D74D7204FC53F1A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840053D2B0BD072636B1D9B3 /* MainTabView.swift */; };
@@ -137,8 +139,10 @@
 		B3AE478EA30012FECF9808DD /* KudosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosService.swift; sourceTree = "<group>"; };
 		B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoCard.swift; sourceTree = "<group>"; };
 		B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
+		BAB624064A17A494A2FD1F4E /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFlowUITests.swift; sourceTree = "<group>"; };
+		C9F2FAA35853A302E6722F30 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
 		CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReviewChecklist.md; sourceTree = "<group>"; };
 		D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -193,9 +197,11 @@
 				86F4487889DCCF31FDC2C831 /* Avatar.swift */,
 				E15BFF3DEF3D117D6343F619 /* BrandColor.swift */,
 				3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */,
+				BAB624064A17A494A2FD1F4E /* EmptyState.swift */,
 				59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */,
 				B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */,
 				7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */,
+				C9F2FAA35853A302E6722F30 /* SectionHeader.swift */,
 				23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */,
 				2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */,
 			);
@@ -500,6 +506,7 @@
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
+				E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */,
 				5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */,
 				FD4E2550084034295ADF7BCA /* InviteRedeemView.swift in Sources */,
 				58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */,
@@ -525,6 +532,7 @@
 				0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */,
 				9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */,
 				166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */,
+				F60DAA052AA4BE6B03756B56 /* SectionHeader.swift in Sources */,
 				BB82282EAB009B543F074D0D /* SecureRandom.swift in Sources */,
 				D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */,
 				53F078EA4CE2200B43A04BA5 /* SettingsView.swift in Sources */,
