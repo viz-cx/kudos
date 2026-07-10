@@ -66,9 +66,7 @@
 		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
 		E278E6CE1A8B19374C082923 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575718AC04C0FE5D4E6C5C19 /* AppError.swift */; };
 		E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB624064A17A494A2FD1F4E /* EmptyState.swift */; };
-		E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */; };
 		E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */; };
-		EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C492F8A7D8757D202B39C /* WarmthSlider.swift */; };
 		ED78272442B044FD22D0D2D4 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4487889DCCF31FDC2C831 /* Avatar.swift */; };
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
 		F60DAA052AA4BE6B03756B56 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2FAA35853A302E6722F30 /* SectionHeader.swift */; };
@@ -119,7 +117,6 @@
 		575718AC04C0FE5D4E6C5C19 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialVault.swift; sourceTree = "<group>"; };
-		610C492F8A7D8757D202B39C /* WarmthSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthSlider.swift; sourceTree = "<group>"; };
 		665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudgetTests.swift; sourceTree = "<group>"; };
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
 		6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModelTests.swift; sourceTree = "<group>"; };
@@ -163,7 +160,6 @@
 		F2E1F261A9C748B2EB404B87 /* KudosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosApp.swift; sourceTree = "<group>"; };
 		F2EB4990B4F9EFB6D46935D0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F35084045000584E7DCEF4F6 /* SessionStoreTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTestHelper.swift; sourceTree = "<group>"; };
-		F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEventRow.swift; sourceTree = "<group>"; };
 		F5107182C903BEFE714B50A4 /* Warmth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warmth.swift; sourceTree = "<group>"; };
 		F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -232,7 +228,6 @@
 				AF18EF37EA057FC63E956E8E /* KudosView.swift */,
 				89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */,
 				ED3470A74AF052CA161320AA /* RecipientField.swift */,
-				610C492F8A7D8757D202B39C /* WarmthSlider.swift */,
 			);
 			path = Kudos;
 			sourceTree = "<group>";
@@ -241,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				3EC169C0805515057E36DA51 /* KudoDetailView.swift */,
-				F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */,
 				3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */,
 				15ABA1FE4943F412D6F70D2A /* ProfileView.swift */,
 				D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */,
@@ -535,7 +529,6 @@
 				58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */,
 				0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */,
 				15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */,
-				E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */,
 				673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */,
 				AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */,
 				1AB49FB300887BF15E4B13C5 /* KudosService.swift in Sources */,
@@ -563,7 +556,6 @@
 				D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */,
 				AED9C010D67ED580C5854273 /* WarmthLabel.swift in Sources */,
 				9DADC9BD5F8C2D356BEBA5E8 /* WarmthPicker.swift in Sources */,
-				EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
