@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04FEB0EBB33AB4BB37D1969F /* BackendClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */; };
+		05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFF3DEF3D117D6343F619 /* BrandColor.swift */; };
 		0A76A2867C84B8AE2C6A017F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F56785470A2A47FC23AB3E /* Person.swift */; };
 		0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC169C0805515057E36DA51 /* KudoDetailView.swift */; };
 		0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */; };
@@ -132,6 +133,7 @@
 		D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
 		D4E0D4B400EC36DE6152AB17 /* SecureRandomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandomTests.swift; sourceTree = "<group>"; };
 		D5AF3A3A2FE1B41EEAD4BF5A /* SessionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTests.swift; sourceTree = "<group>"; };
+		E15BFF3DEF3D117D6343F619 /* BrandColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandColor.swift; sourceTree = "<group>"; };
 		E96BBC9D9D7E36C1FB9C197F /* WarmthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthTests.swift; sourceTree = "<group>"; };
 		ED3470A74AF052CA161320AA /* RecipientField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientField.swift; sourceTree = "<group>"; };
 		EE5EF269744E00364476B629 /* KudosUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 		2F4ED44F51E0DA3AEEDB433D /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E15BFF3DEF3D117D6343F619 /* BrandColor.swift */,
 				3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */,
 			);
 			path = DesignSystem;
@@ -474,6 +477,7 @@
 				E278E6CE1A8B19374C082923 /* AppError.swift in Sources */,
 				77DAA3E99CB237A0A202BC58 /* AppreciationBudget.swift in Sources */,
 				E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */,
+				05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */,
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
