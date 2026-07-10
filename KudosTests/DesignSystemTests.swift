@@ -23,3 +23,15 @@ struct AvatarInitialTests {
         #expect(Avatar.initial(for: "") == "?")
     }
 }
+
+struct WarmthLabelTests {
+    @Test func lowFractionIsLittle() {
+        #expect(WarmthLabel.text(for: 0.1) == "A little warmth")
+    }
+    @Test func midFractionIsGoodDeal() {
+        #expect(WarmthLabel.text(for: 0.5) == "A good deal of warmth")
+    }
+    @Test func highFractionIsLot() {
+        #expect(WarmthLabel.text(for: 0.9) == "A lot of warmth")
+    }
+}

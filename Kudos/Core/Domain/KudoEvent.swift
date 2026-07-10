@@ -17,11 +17,5 @@ struct KudoEvent: Identifiable, Equatable, Sendable {
     let timestamp: Date
 
     /// Qualitative warmth label, keeping with the app's amount-free tone.
-    var warmthLabel: String {
-        switch warmth.fraction {
-        case ..<0.34: return String(localized: "kudo.warmth.little", defaultValue: "A little warmth")
-        case ..<0.67: return String(localized: "kudo.warmth.some", defaultValue: "A good deal of warmth")
-        default: return String(localized: "kudo.warmth.lot", defaultValue: "A lot of warmth")
-        }
-    }
+    var warmthLabel: String { WarmthLabel.text(for: warmth.fraction) }
 }
