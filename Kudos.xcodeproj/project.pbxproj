@@ -30,6 +30,7 @@
 		51E65D4C69F1CFD8197134DD /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6CEE31FC0A024BE35968013D /* KeychainAccess */; };
 		53F078EA4CE2200B43A04BA5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220615325AE0198E8940E58F /* SettingsView.swift */; };
 		56652FDFFAE6366F6557DBF3 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312C1278D77F4E26DCE8A5A /* OnboardingViewModel.swift */; };
+		58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */; };
 		5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */; };
 		63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */; };
 		673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E1F261A9C748B2EB404B87 /* KudosApp.swift */; };
@@ -134,6 +135,7 @@
 		B2EBE76F390E2B51094394DE /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		B303003CDF9FBF8844B8E02E /* KudosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosUITests.swift; sourceTree = "<group>"; };
 		B3AE478EA30012FECF9808DD /* KudosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosService.swift; sourceTree = "<group>"; };
+		B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoCard.swift; sourceTree = "<group>"; };
 		B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFlowUITests.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E15BFF3DEF3D117D6343F619 /* BrandColor.swift */,
 				3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */,
 				59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */,
+				B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */,
 				7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */,
 				23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */,
 				2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */,
@@ -499,6 +502,7 @@
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
 				5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */,
 				FD4E2550084034295ADF7BCA /* InviteRedeemView.swift in Sources */,
+				58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */,
 				0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */,
 				15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */,
 				E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */,
