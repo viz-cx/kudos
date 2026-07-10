@@ -51,6 +51,7 @@
 		B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */; };
 		B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D3C84DBA30E71B389F9F3 /* KudosTests.swift */; };
 		BB82282EAB009B543F074D0D /* SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8D9950352279112E9240E /* SecureRandom.swift */; };
+		BD499BF0440BADCE18D96B4A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */; };
 		C362D10757372E6E35223587 /* KudosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18EF37EA057FC63E956E8E /* KudosView.swift */; };
 		CF870DB2FBD0E7383A29705F /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE76F390E2B51094394DE /* AccountService.swift */; };
 		D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7B911755DDEB97E84FECF9 /* SessionStore.swift */; };
@@ -110,6 +111,7 @@
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
 		6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModelTests.swift; sourceTree = "<group>"; };
 		73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTests.swift; sourceTree = "<group>"; };
+		7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		840053D2B0BD072636B1D9B3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		848ABF8131C8EB340702F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModel.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				E15BFF3DEF3D117D6343F619 /* BrandColor.swift */,
 				3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */,
 				59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */,
+				7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				4588176E03623D5D7430DBE6 /* PeopleSearchService.swift in Sources */,
 				0A76A2867C84B8AE2C6A017F /* Person.swift in Sources */,
 				965D22B2F690F85D76306AB1 /* PreviewMocks.swift in Sources */,
+				BD499BF0440BADCE18D96B4A /* PrimaryButton.swift in Sources */,
 				FB3867F24E9559F163621D79 /* ProfileQRView.swift in Sources */,
 				260529DFE4F94287D6DBED89 /* ProfileView.swift in Sources */,
 				0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */,
