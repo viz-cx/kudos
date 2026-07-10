@@ -4,11 +4,13 @@ struct MainTabView: View {
     private let people: any PeopleSearching
     private let vault: CredentialVault
     private let backend: BackendClient
+    private let feed: any KudosFeedProviding
 
-    init(people: any PeopleSearching, vault: CredentialVault, backend: BackendClient) {
+    init(people: any PeopleSearching, vault: CredentialVault, backend: BackendClient, feed: any KudosFeedProviding) {
         self.people = people
         self.vault = vault
         self.backend = backend
+        self.feed = feed
     }
 
     var body: some View {
@@ -19,7 +21,7 @@ struct MainTabView: View {
             .tabItem { Label("Kudos", systemImage: "heart.fill") }
 
             NavigationStack {
-                ProfileView()
+                ProfileView(feed: feed)
             }
             .tabItem { Label("You", systemImage: "person.fill") }
 

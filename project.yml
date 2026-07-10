@@ -38,6 +38,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: cx.viz.kudos
         SWIFT_VERSION: "6.0"
         INFOPLIST_FILE: Kudos/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     dependencies:
       - package: VIZ
         product: VIZ
