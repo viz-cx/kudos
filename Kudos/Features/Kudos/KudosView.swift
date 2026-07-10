@@ -38,8 +38,7 @@ struct KudosView: View {
                 RecipientField(
                     text: $vm.recipient,
                     suggestions: vm.suggestions,
-                    onQuery: { q in Task { await vm.search(q) } },
-                    onScan: {}
+                    onQuery: { q in Task { await vm.search(q) } }
                 )
 
                 WarmthSlider(fraction: $vm.warmthFraction, max: session.budget.fraction)

@@ -1,11 +1,25 @@
 import SwiftUI
 import CodeScanner
 
+/// Extracts a VIZ username from a scanned QR payload. Profile QRs encode a full
+/// URL like "https://viz.cx/@alice"; this returns the bare username ("alice"),
+/// while a plain scanned username passes through unchanged.
+enum RecipientQR {
+    static func username(from payload: String) -> String {
+        let trimmed = payload.trimmingCharacters(in: .whitespacesAndNewlines)
+        if let atRange = trimmed.range(of: "@", options: .backwards) {
+            let token = trimmed[atRange.upperBound...]
+                .prefix { $0.isLetter || $0.isNumber || $0 == "." || $0 == "-" }
+            if !token.isEmpty { return String(token) }
+        }
+        return trimmed
+    }
+}
+
 struct RecipientField: View {
     @Binding var text: String
     let suggestions: [Person]
     let onQuery: (String) -> Void
-    let onScan: () -> Void
 
     @State private var showScanner = false
 
@@ -59,8 +73,9 @@ struct RecipientField: View {
             CodeScannerView(codeTypes: [.qr]) { result in
                 showScanner = false
                 if case .success(let scan) = result {
-                    text = scan.string
-                    onQuery(scan.string)
+                    let username = RecipientQR.username(from: scan.string)
+                    text = username
+                    onQuery(username)
                 }
             }
         }
@@ -73,6 +88,6 @@ struct RecipientField: View {
         Person(username: "alice", displayName: "Alice"),
         Person(username: "bob", displayName: nil)
     ]
-    RecipientField(text: $text, suggestions: people, onQuery: { _ in }, onScan: {})
+    RecipientField(text: $text, suggestions: people, onQuery: { _ in })
         .padding()
 }

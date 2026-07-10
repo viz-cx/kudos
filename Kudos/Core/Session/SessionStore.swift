@@ -24,9 +24,13 @@ import Observation
     }
 
     func restore() async {
-        let credentials = await vault.load()
-        if let credentials {
-            await completeSignIn(credentials)
+        // Only the (non-secret) username is read here, so a returning user lands
+        // in the app without a Face ID prompt. The signing key is loaded lazily on
+        // the first send, which is the natural moment to authenticate.
+        if let username = await vault.loadUsername() {
+            self.username = username
+            await refresh()
+            phase = .active
         } else {
             phase = .onboarding
         }
@@ -41,9 +45,19 @@ import Observation
     }
 
     func sendKudos(to receiver: String, warmth: Warmth, note: String) async throws {
-        guard !_regularKey.isEmpty else { throw AppError.signing }
-        try await kudos.send(from: username, to: receiver, warmth: warmth, note: note, regularKeyWIF: _regularKey)
+        let key = try await signingKey()
+        try await kudos.send(from: username, to: receiver, warmth: warmth, note: note, regularKeyWIF: key)
         await refresh()
+    }
+
+    /// Returns the in-memory signing key, loading it from the vault (with a
+    /// biometric prompt) on first use within a restored session.
+    private func signingKey() async throws -> String {
+        if _regularKey.isEmpty {
+            guard let key = await vault.loadKey() else { throw AppError.signing }
+            _regularKey = key
+        }
+        return _regularKey
     }
 
     func refresh() async {
