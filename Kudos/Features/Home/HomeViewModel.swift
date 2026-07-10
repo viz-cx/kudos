@@ -25,6 +25,7 @@ import Foundation
     }
 
     func load() async {
+        greeting = Greeting.current()
         await session.refresh()
         guard !session.username.isEmpty else { return }
         isLoadingFeed = true

@@ -39,8 +39,10 @@ struct HomeView: View {
         .background(BrandColor.canvas.ignoresSafeArea())
         .navigationTitle("Kudos")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear { if vm == nil { vm = HomeViewModel(session: session, feedProvider: feed) } }
-        .task { await vm?.load() }
+        .task {
+            if vm == nil { vm = HomeViewModel(session: session, feedProvider: feed) }
+            await vm?.load()
+        }
         .refreshable { await vm?.load() }
     }
 

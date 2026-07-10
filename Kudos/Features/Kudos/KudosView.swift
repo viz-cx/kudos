@@ -58,7 +58,10 @@ struct KudosView: View {
                 Button {
                     Task {
                         await vm.send()
-                        if !vm.showError { onSent() }
+                        if !vm.showError {
+                            try? await Task.sleep(for: .milliseconds(800))
+                            onSent()
+                        }
                     }
                 } label: {
                     if vm.isSending { ProgressView().tint(.white) } else { Text("Send with love") }
