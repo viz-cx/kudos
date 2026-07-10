@@ -49,12 +49,14 @@ Camera permission: Used only for scanning QR codes in the recipient search field
 
 ## Screenshot Suggestions (6.7-inch / iPhone 16 Pro Max)
 
+> **Note:** Redesigned for v1 warm & joyful UI (shipped). Retake all screenshots after the redesign update.
+
 | # | Screen | Caption |
 |---|--------|---------|
-| 1 | Kudos tab (compose) | "A kudo in three taps" |
-| 2 | Profile with your kudos list | "Every compliment, saved forever" |
-| 3 | QR Share screen | "Share your code, get kudos instantly" |
-| 4 | Kudo detail view | "The full story behind each thank-you" |
+| 1 | Home feed (gradient greeting + KudoCards) | "Gratitude, front and centre" |
+| 2 | Compose sheet with WarmthPicker | "A kudo in three taps" |
+| 3 | You tab — avatar + QR code | "Share your code, get kudos instantly" |
+| 4 | Kudo detail view (warm card) | "The full story behind each thank-you" |
 
 ---
 
@@ -72,7 +74,7 @@ Camera permission: Used only for scanning QR codes in the recipient search field
 - [ ] No other sensitive permissions requested unnecessarily
 
 ### Build
-- [x] Runs without crashes on iPhone (latest iOS) — build + unit + UI tests pass clean
+- [x] Runs without crashes on iPhone (latest iOS) — build + unit (44 tests, 17 suites) + UI (5 tests, 2 suites) pass clean
 - [ ] Runs without crashes on iPad (if universal)
 - [x] No placeholder UI or lorem-ipsum text in the binary
 - [x] App icon set — single 1024×1024, no alpha channel (placeholder; replace with final artwork before release)
