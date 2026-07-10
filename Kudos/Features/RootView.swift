@@ -6,17 +6,20 @@ struct RootView: View {
     private let people: any PeopleSearching
     private let vault: CredentialVault
     private let backend: BackendClient
+    private let feed: any KudosFeedProviding
 
     init(
         onboarding: any OnboardingProviding,
         people: any PeopleSearching,
         vault: CredentialVault,
-        backend: BackendClient
+        backend: BackendClient,
+        feed: any KudosFeedProviding
     ) {
         self.onboarding = onboarding
         self.people = people
         self.vault = vault
         self.backend = backend
+        self.feed = feed
     }
 
     var body: some View {
@@ -27,7 +30,7 @@ struct RootView: View {
         case .onboarding:
             OnboardingView(session: session, onboarding: onboarding)
         case .active:
-            MainTabView(people: people, vault: vault, backend: backend)
+            MainTabView(people: people, vault: vault, backend: backend, feed: feed)
         }
     }
 }

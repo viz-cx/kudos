@@ -15,7 +15,7 @@ Send gratitude to the people you appreciate
 
 Kudos is a gratitude app that makes it easy to celebrate the people around you. Send a heartfelt acknowledgement to a colleague, friend, or family member with just a few taps — no account required to receive.
 
-Browse the public feed to see what your community is celebrating, or share your own appreciation in seconds. Each kudo carries your name and a short message of thanks so the recipient always knows who cares.
+Look back over the kudos you've received and sent in your personal history, and keep every kind word close. Each kudo carries your name and a short message of thanks so the recipient always knows who cares.
 
 To send kudos you'll need a Kudos account (free to create). Scan a friend's personal QR code or share your own — meeting up in person has never been a better reason to say thank you.
 
@@ -40,7 +40,7 @@ Demo access (no invite required):
 3. You will be signed in with a demo account
 4. You'll see three tabs: Kudos (home), You (profile), Settings
 5. In Kudos tab: search for a recipient, adjust appreciation level, add a note, tap "Send kudos"
-6. In You tab: view your profile QR code
+6. In You tab: view your profile QR code and your personal list of received/sent kudos (tap one for detail)
 7. In Settings: sign out, view connection settings
 
 Camera permission: Used only for scanning QR codes in the recipient search field (CodeScanner button). Not required for the main demo flow.
@@ -51,11 +51,10 @@ Camera permission: Used only for scanning QR codes in the recipient search field
 
 | # | Screen | Caption |
 |---|--------|---------|
-| 1 | Activity Feed (populated) | "See what your community is grateful for" |
-| 2 | Send Kudos sheet | "A kudo in three taps" |
+| 1 | Kudos tab (compose) | "A kudo in three taps" |
+| 2 | Profile with your kudos list | "Every compliment, saved forever" |
 | 3 | QR Share screen | "Share your code, get kudos instantly" |
-| 4 | Profile / received kudos list | "Every compliment, saved forever" |
-| 5 | Kudo detail view | "The full story behind each thank-you" |
+| 4 | Kudo detail view | "The full story behind each thank-you" |
 
 ---
 
@@ -73,11 +72,11 @@ Camera permission: Used only for scanning QR codes in the recipient search field
 - [ ] No other sensitive permissions requested unnecessarily
 
 ### Build
-- [ ] Runs without crashes on iPhone (latest iOS)
+- [x] Runs without crashes on iPhone (latest iOS) — build + unit + UI tests pass clean
 - [ ] Runs without crashes on iPad (if universal)
-- [ ] No placeholder UI or lorem-ipsum text in the binary
-- [ ] App icon set — all required sizes present, no alpha channel
-- [ ] Launch screen visible and branded
+- [x] No placeholder UI or lorem-ipsum text in the binary
+- [x] App icon set — single 1024×1024, no alpha channel (placeholder; replace with final artwork before release)
+- [x] Launch screen visible and branded (LaunchBackground color)
 
 ### App Store Connect
 - [ ] Age rating completed (expected: 4+)

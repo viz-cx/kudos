@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		04FEB0EBB33AB4BB37D1969F /* BackendClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */; };
 		0A76A2867C84B8AE2C6A017F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F56785470A2A47FC23AB3E /* Person.swift */; };
+		0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC169C0805515057E36DA51 /* KudoDetailView.swift */; };
 		0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */; };
 		114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */; };
+		15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E411B5BB3CCA622092FD7 /* KudoEvent.swift */; };
 		166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F1863C2909578AD72BFB0 /* RootView.swift */; };
 		1AB49FB300887BF15E4B13C5 /* KudosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AE478EA30012FECF9808DD /* KudosService.swift */; };
 		1DC240A5DD7B9E781B82AB6F /* WarmthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BBC9D9D7E36C1FB9C197F /* WarmthTests.swift */; };
@@ -18,6 +20,8 @@
 		260529DFE4F94287D6DBED89 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABA1FE4943F412D6F70D2A /* ProfileView.swift */; };
 		2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A29D07B133518F99450CE /* AppErrorTests.swift */; };
 		2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */; };
+		32DD8C2035B4E2BE4EB1DB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */; };
+		38F23EB20D433B1D0F046831 /* ReviewChecklist.md in Resources */ = {isa = PBXBuildFile; fileRef = CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */; };
 		3BE561C2B5F2F638B6F331ED /* SessionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF3A3A2FE1B41EEAD4BF5A /* SessionStoreTests.swift */; };
 		42C3A996B7D2AED2CD43A26E /* RestoreAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821586CBA220C706372DA2C2 /* RestoreAccessView.swift */; };
 		4588176E03623D5D7430DBE6 /* PeopleSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */; };
@@ -37,8 +41,10 @@
 		9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3470A74AF052CA161320AA /* RecipientField.swift */; };
 		A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */; };
 		A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */; };
+		AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */; };
 		AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */; };
 		B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */; };
+		B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */; };
 		B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */; };
 		B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D3C84DBA30E71B389F9F3 /* KudosTests.swift */; };
 		BB82282EAB009B543F074D0D /* SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8D9950352279112E9240E /* SecureRandom.swift */; };
@@ -49,6 +55,7 @@
 		D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5107182C903BEFE714B50A4 /* Warmth.swift */; };
 		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
 		E278E6CE1A8B19374C082923 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575718AC04C0FE5D4E6C5C19 /* AppError.swift */; };
+		E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */; };
 		E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */; };
 		EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C492F8A7D8757D202B39C /* WarmthSlider.swift */; };
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
@@ -78,12 +85,16 @@
 /* Begin PBXFileReference section */
 		03F56785470A2A47FC23AB3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		15ABA1FE4943F412D6F70D2A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		173E411B5BB3CCA622092FD7 /* KudoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEvent.swift; sourceTree = "<group>"; };
 		1DFE49D6290F28DA1E25B219 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		220615325AE0198E8940E58F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		251D3C84DBA30E71B389F9F3 /* KudosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosTests.swift; sourceTree = "<group>"; };
 		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosFeedService.swift; sourceTree = "<group>"; };
+		32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoFeedMapperTests.swift; sourceTree = "<group>"; };
 		35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudget.swift; sourceTree = "<group>"; };
 		36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClient.swift; sourceTree = "<group>"; };
+		3EC169C0805515057E36DA51 /* KudoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoDetailView.swift; sourceTree = "<group>"; };
 		3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileQRView.swift; sourceTree = "<group>"; };
 		48647E87FE314D59DB423E8C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		56BAA8A4BB7708D688A108B8 /* KudosTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +125,7 @@
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFlowUITests.swift; sourceTree = "<group>"; };
 		CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
+		CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReviewChecklist.md; sourceTree = "<group>"; };
 		D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
 		D4E0D4B400EC36DE6152AB17 /* SecureRandomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandomTests.swift; sourceTree = "<group>"; };
@@ -123,7 +135,9 @@
 		EE5EF269744E00364476B629 /* KudosUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E1F261A9C748B2EB404B87 /* KudosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosApp.swift; sourceTree = "<group>"; };
 		F35084045000584E7DCEF4F6 /* SessionStoreTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTestHelper.swift; sourceTree = "<group>"; };
+		F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEventRow.swift; sourceTree = "<group>"; };
 		F5107182C903BEFE714B50A4 /* Warmth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warmth.swift; sourceTree = "<group>"; };
+		F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +159,7 @@
 		28969743EFCE38715059B34A /* Kudos */ = {
 			isa = PBXGroup;
 			children = (
+				F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */,
 				848ABF8131C8EB340702F30F /* Info.plist */,
 				F2E1F261A9C748B2EB404B87 /* KudosApp.swift */,
 				B24C121A9627ACA2D29B5E7A /* Backend */,
@@ -169,6 +184,8 @@
 		4F3A909E13F9A1130A711731 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3EC169C0805515057E36DA51 /* KudoDetailView.swift */,
+				F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */,
 				3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */,
 				15ABA1FE4943F412D6F70D2A /* ProfileView.swift */,
 				D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */,
@@ -202,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				B2EBE76F390E2B51094394DE /* AccountService.swift */,
+				3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */,
 				B3AE478EA30012FECF9808DD /* KudosService.swift */,
 				B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */,
 				96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */,
@@ -213,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */,
+				CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -233,6 +252,7 @@
 				8B4A29D07B133518F99450CE /* AppErrorTests.swift */,
 				665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */,
 				A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */,
+				32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */,
 				251D3C84DBA30E71B389F9F3 /* KudosTests.swift */,
 				6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */,
 				9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */,
@@ -278,6 +298,7 @@
 				A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */,
 				35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */,
 				1DFE49D6290F28DA1E25B219 /* Credentials.swift */,
+				173E411B5BB3CCA622092FD7 /* KudoEvent.swift */,
 				03F56785470A2A47FC23AB3E /* Person.swift */,
 				F5107182C903BEFE714B50A4 /* Warmth.swift */,
 			);
@@ -343,6 +364,7 @@
 			buildConfigurationList = 47FFD8CC7A9DF6C367D6CEBD /* Build configuration list for PBXNativeTarget "Kudos" */;
 			buildPhases = (
 				98345B351BA1EB64B913E39A /* Sources */,
+				1CD1708DD14BA99FA8356F1A /* Resources */,
 				E80462A816E85D7D9D115153 /* Frameworks */,
 			);
 			buildRules = (
@@ -419,6 +441,18 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1CD1708DD14BA99FA8356F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DD8C2035B4E2BE4EB1DB53 /* Assets.xcassets in Resources */,
+				38F23EB20D433B1D0F046831 /* ReviewChecklist.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98345B351BA1EB64B913E39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -432,7 +466,11 @@
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
 				FD4E2550084034295ADF7BCA /* InviteRedeemView.swift in Sources */,
+				0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */,
+				15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */,
+				E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */,
 				673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */,
+				AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */,
 				1AB49FB300887BF15E4B13C5 /* KudosService.swift in Sources */,
 				C362D10757372E6E35223587 /* KudosView.swift in Sources */,
 				114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */,
@@ -475,6 +513,7 @@
 				2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */,
 				F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */,
 				04FEB0EBB33AB4BB37D1969F /* BackendClientTests.swift in Sources */,
+				B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */,
 				B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */,
 				B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */,
 				2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */,

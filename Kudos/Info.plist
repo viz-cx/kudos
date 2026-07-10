@@ -23,6 +23,9 @@
     <key>NSFaceIDUsageDescription</key>
     <string>Verify your identity to access your account.</string>
     <key>UILaunchScreen</key>
-    <dict/>
+    <dict>
+        <key>UIColorName</key>
+        <string>LaunchBackground</string>
+    </dict>
 </dict>
 </plist>

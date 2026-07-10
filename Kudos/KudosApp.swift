@@ -7,6 +7,7 @@ struct KudosApp: App {
     private let people: any PeopleSearching
     private let vault: CredentialVault
     private let backend: BackendClient
+    private let feed: any KudosFeedProviding
 
     init() {
         let vault = CredentialVault()
@@ -26,6 +27,7 @@ struct KudosApp: App {
             self.people = PreviewPeopleMock()
             self.vault = vault
             self.backend = BackendClient()
+            self.feed = PreviewFeedMock()
             return
         }
         #endif
@@ -44,11 +46,12 @@ struct KudosApp: App {
         self.people = LivePeopleSearchService(backend: backend)
         self.vault = vault
         self.backend = backend
+        self.feed = LiveKudosFeedService(node: node)
     }
 
     var body: some Scene {
         WindowGroup {
-            RootView(onboarding: onboarding, people: people, vault: vault, backend: backend)
+            RootView(onboarding: onboarding, people: people, vault: vault, backend: backend, feed: feed)
                 .environment(session)
         }
     }
