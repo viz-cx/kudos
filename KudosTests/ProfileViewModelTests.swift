@@ -25,12 +25,6 @@ struct ProfileViewModelTests {
         #expect(vm.username == session.username)
     }
 
-    @Test func budgetMatchesSession() async {
-        let session = await SessionStore.makeActiveTestStore()
-        let vm = ProfileViewModel(session: session, feedProvider: StubFeed())
-        #expect(vm.budget == session.budget)
-    }
-
     @Test func loadFeedPopulatesEvents() async {
         let session = await SessionStore.makeActiveTestStore()
         let events = [

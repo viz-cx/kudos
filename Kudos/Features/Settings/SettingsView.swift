@@ -53,8 +53,8 @@ struct SettingsView: View {
                 }
             }
             Section("About") {
-                Link("Privacy Policy", destination: URL(string: "https://viz.cx/privacy")!)
-                Link("Terms of Use", destination: URL(string: "https://viz.cx/terms")!)
+                Link("Privacy Policy", destination: URL(string: "https://viz-cx.github.io/kudos/privacy/")!)
+                Link("Support", destination: URL(string: "https://viz-cx.github.io/kudos/support/")!)
             }
         }
         .navigationTitle("Settings")

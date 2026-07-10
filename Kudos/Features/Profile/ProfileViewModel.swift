@@ -2,7 +2,6 @@ import Foundation
 
 @MainActor @Observable final class ProfileViewModel {
     private(set) var username: String
-    private(set) var budget: AppreciationBudget
     private(set) var feed: [KudoEvent] = []
     private(set) var isLoadingFeed = false
     private(set) var feedError: String?
@@ -15,13 +14,11 @@ import Foundation
         self.session = session
         self.feedProvider = feedProvider
         self.username = session.username
-        self.budget = session.budget
     }
 
     func refresh() async {
         await session.refresh()
         username = session.username
-        budget = session.budget
     }
 
     func loadFeed() async {
