@@ -62,6 +62,7 @@
 		E48CDB0D0B692879F1E4E2D5 /* KudoEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450EC0990CD788B93BB89D5 /* KudoEventRow.swift */; };
 		E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */; };
 		EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C492F8A7D8757D202B39C /* WarmthSlider.swift */; };
+		ED78272442B044FD22D0D2D4 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4487889DCCF31FDC2C831 /* Avatar.swift */; };
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
 		F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */; };
 		FB3867F24E9559F163621D79 /* ProfileQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */; };
@@ -114,6 +115,7 @@
 		7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		840053D2B0BD072636B1D9B3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		848ABF8131C8EB340702F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86F4487889DCCF31FDC2C831 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModel.swift; sourceTree = "<group>"; };
 		8B4A29D07B133518F99450CE /* AppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorTests.swift; sourceTree = "<group>"; };
 		8EF8D9950352279112E9240E /* SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		2F4ED44F51E0DA3AEEDB433D /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				86F4487889DCCF31FDC2C831 /* Avatar.swift */,
 				E15BFF3DEF3D117D6343F619 /* BrandColor.swift */,
 				3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */,
 				59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */,
@@ -482,6 +485,7 @@
 				85EDAAE3B1D51DA392DD24B9 /* AccountSnapshot.swift in Sources */,
 				E278E6CE1A8B19374C082923 /* AppError.swift in Sources */,
 				77DAA3E99CB237A0A202BC58 /* AppreciationBudget.swift in Sources */,
+				ED78272442B044FD22D0D2D4 /* Avatar.swift in Sources */,
 				E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */,
 				05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */,
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,

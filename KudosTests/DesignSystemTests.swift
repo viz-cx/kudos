@@ -11,3 +11,15 @@ struct ColorHexTests {
         #expect(abs(resolved.blue - 0.349) < 0.01)
     }
 }
+
+struct AvatarInitialTests {
+    @Test func usesFirstCharacterUppercased() {
+        #expect(Avatar.initial(for: "maya") == "M")
+    }
+    @Test func skipsLeadingAtSign() {
+        #expect(Avatar.initial(for: "@sam") == "S")
+    }
+    @Test func fallsBackToQuestionMark() {
+        #expect(Avatar.initial(for: "") == "?")
+    }
+}
