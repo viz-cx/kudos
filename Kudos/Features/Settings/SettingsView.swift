@@ -58,6 +58,9 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("Settings")
+        .scrollContentBackground(.hidden)
+        .background(BrandColor.canvas.ignoresSafeArea())
+        .tint(BrandColor.magenta)
         .alert("Recovery code", isPresented: Bindable(vm).showRecoveryCodeAlert) {
             Button("Copy") {
                 if let code = vm.recoveryCodeText {
