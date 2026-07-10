@@ -21,18 +21,19 @@ struct InviteRedeemView: View {
             .navigationTitle("Join Kudos")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Join") {
-                        Task { await vm.redeem() }
-                    }
-                    .disabled(vm.isWorking)
-                }
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
                 }
             }
-            .overlay {
-                if vm.isWorking { ProgressView() }
+            .safeAreaInset(edge: .bottom) {
+                Button {
+                    Task { await vm.redeem() }
+                } label: {
+                    if vm.isWorking { ProgressView().tint(.white) } else { Text("Join Kudos") }
+                }
+                .buttonStyle(.primary)
+                .disabled(vm.isWorking)
+                .padding()
             }
         }
     }
