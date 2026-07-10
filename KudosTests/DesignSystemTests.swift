@@ -35,3 +35,10 @@ struct WarmthLabelTests {
         #expect(WarmthLabel.text(for: 0.9) == "A lot of warmth")
     }
 }
+
+struct GreetingTests {
+    @Test func morning() { #expect(Greeting.text(for: 8) == "Good morning ✨") }
+    @Test func afternoon() { #expect(Greeting.text(for: 14) == "Good afternoon ✨") }
+    @Test func evening() { #expect(Greeting.text(for: 21) == "Good evening ✨") }
+    @Test func lateNightIsEvening() { #expect(Greeting.text(for: 2) == "Good evening ✨") }
+}
