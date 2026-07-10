@@ -6,21 +6,54 @@ final class GuestFlowUITests: XCTestCase {
         app.launchArguments += ["-UITEST_DEMO", "1"]
         app.launch()
 
-        let lookAroundButton = app.buttons["Look around first"]
+        let lookAroundButton = app.buttons.matching(
+            NSPredicate(format: "label BEGINSWITH 'Look around'")
+        ).firstMatch
         XCTAssertTrue(lookAroundButton.waitForExistence(timeout: 30))
         lookAroundButton.tap()
 
-        XCTAssertTrue(app.tabBars.buttons["Kudos"].waitForExistence(timeout: 15))
+        XCTAssertTrue(app.tabBars.buttons["Home"].waitForExistence(timeout: 15))
         XCTAssertTrue(app.tabBars.buttons["You"].exists)
         XCTAssertTrue(app.tabBars.buttons["Settings"].exists)
     }
 
-    func testProfileShowsKudosFeed() {
+    func testHomeShowsSendKudosAndComposeSheet() {
         let app = XCUIApplication()
         app.launchArguments += ["-UITEST_DEMO", "1"]
         app.launch()
 
-        let lookAroundButton = app.buttons["Look around first"]
+        let lookAroundButton = app.buttons.matching(
+            NSPredicate(format: "label BEGINSWITH 'Look around'")
+        ).firstMatch
+        XCTAssertTrue(lookAroundButton.waitForExistence(timeout: 30))
+        lookAroundButton.tap()
+
+        // Lands on the Home feed with "Send kudos" button
+        XCTAssertTrue(app.buttons["Send kudos"].waitForExistence(timeout: 15))
+
+        let homeShot = XCTAttachment(screenshot: app.screenshot())
+        homeShot.name = "Home-feed"
+        homeShot.lifetime = .keepAlways
+        add(homeShot)
+
+        // Opening compose presents the sheet with recipient field
+        app.buttons["Send kudos"].tap()
+        XCTAssertTrue(app.textFields["Find someone"].waitForExistence(timeout: 10))
+
+        let composeShot = XCTAttachment(screenshot: app.screenshot())
+        composeShot.name = "Compose-sheet"
+        composeShot.lifetime = .keepAlways
+        add(composeShot)
+    }
+
+    func testYouTabIsIdentityOnly() {
+        let app = XCUIApplication()
+        app.launchArguments += ["-UITEST_DEMO", "1"]
+        app.launch()
+
+        let lookAroundButton = app.buttons.matching(
+            NSPredicate(format: "label BEGINSWITH 'Look around'")
+        ).firstMatch
         XCTAssertTrue(lookAroundButton.waitForExistence(timeout: 30))
         lookAroundButton.tap()
 
@@ -28,22 +61,13 @@ final class GuestFlowUITests: XCTestCase {
         XCTAssertTrue(youTab.waitForExistence(timeout: 15))
         youTab.tap()
 
-        // Feed section header + a mock event from PreviewFeedMock.
-        XCTAssertTrue(app.staticTexts["Your kudos"].waitForExistence(timeout: 15))
-        XCTAssertTrue(app.staticTexts["From @alice"].waitForExistence(timeout: 5))
+        // "You" tab no longer hosts the kudos feed
+        XCTAssertFalse(app.staticTexts["Your kudos"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["From @alice"].exists)
 
         let shot = XCTAttachment(screenshot: app.screenshot())
-        shot.name = "Profile-with-kudos-feed"
+        shot.name = "You-tab-identity"
         shot.lifetime = .keepAlways
         add(shot)
-
-        // Tap through to the detail view.
-        app.staticTexts["From @alice"].tap()
-        XCTAssertTrue(app.navigationBars["Kudo"].waitForExistence(timeout: 10))
-
-        let detailShot = XCTAttachment(screenshot: app.screenshot())
-        detailShot.name = "Kudo-detail"
-        detailShot.lifetime = .keepAlways
-        add(detailShot)
     }
 }

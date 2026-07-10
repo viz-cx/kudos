@@ -8,7 +8,7 @@ struct KudoDetailView: View {
             VStack(spacing: 20) {
                 Image(systemName: event.direction == .received ? "heart.fill" : "paperplane.fill")
                     .font(.system(size: 56))
-                    .foregroundStyle(event.direction == .received ? .pink : .orange)
+                    .foregroundStyle(event.direction == .received ? BrandColor.receivedAccent : BrandColor.sentAccent)
                     .padding(.top, 24)
 
                 Text(event.direction == .received
@@ -26,16 +26,17 @@ struct KudoDetailView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color(.secondarySystemBackground))
+                        .background(event.direction == .received ? BrandColor.receivedTint : BrandColor.sentTint)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
 
                 Label(event.warmthLabel, systemImage: "flame.fill")
                     .font(.subheadline)
-                    .foregroundStyle(.orange)
+                    .foregroundStyle(BrandColor.coral)
             }
             .padding()
         }
+        .background(BrandColor.canvas.ignoresSafeArea())
         .navigationTitle("Kudo")
         .navigationBarTitleDisplayMode(.inline)
     }

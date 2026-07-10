@@ -38,8 +38,9 @@ struct RecipientField: View {
                 }
             }
             .padding(12)
-            .background(Color(.secondarySystemBackground))
+            .background(BrandColor.surface)
             .clipShape(RoundedRectangle(cornerRadius: 12))
+            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(BrandColor.coral.opacity(0.2)))
 
             if !suggestions.isEmpty {
                 VStack(alignment: .leading, spacing: 0) {
@@ -64,7 +65,7 @@ struct RecipientField: View {
                         Divider()
                     }
                 }
-                .background(Color(.secondarySystemBackground))
+                .background(BrandColor.surface)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .padding(.top, 4)
             }

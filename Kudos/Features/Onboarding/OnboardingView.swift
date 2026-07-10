@@ -10,25 +10,39 @@ struct OnboardingView: View {
     }
 
     var body: some View {
-        VStack(spacing: 32) {
-            Spacer()
-            Text("Kudos")
-                .font(.largeTitle.bold())
-            Text("Share your appreciation with the people who matter.")
-                .multilineTextAlignment(.center)
-                .foregroundStyle(.secondary)
-            Spacer()
-            VStack(spacing: 16) {
-                Button("I have an invite") { showInviteSheet = true }
-                    .buttonStyle(.borderedProminent)
-                Button("Look around first") {
-                    Task { await vm.continueAsGuest() }
+        ZStack {
+            BrandGradient.full.ignoresSafeArea()
+            VStack(spacing: 20) {
+                Spacer()
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 56))
+                    .foregroundStyle(.white)
+                    .padding(28)
+                    .background(.white.opacity(0.18), in: Circle())
+                Text("Kudos")
+                    .font(.largeTitle.bold())
+                    .foregroundStyle(.white)
+                Text("Send a little gratitude to the people who make your day.")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.white.opacity(0.9))
+                    .padding(.horizontal, 24)
+                Spacer()
+                VStack(spacing: 14) {
+                    Button("I have an invite") { showInviteSheet = true }
+                        .font(.headline)
+                        .foregroundStyle(BrandColor.magenta)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(.white, in: Capsule())
+                    Button("Look around first →") {
+                        Task { await vm.continueAsGuest() }
+                    }
+                    .foregroundStyle(.white)
+                    .font(.subheadline.weight(.semibold))
                 }
-                .foregroundStyle(.secondary)
-                .font(.footnote)
             }
+            .padding()
         }
-        .padding()
         .sheet(isPresented: $showInviteSheet) {
             InviteRedeemView(vm: vm)
         }
@@ -38,7 +52,7 @@ struct OnboardingView: View {
             Text(vm.errorText)
         }
         .overlay {
-            if vm.isWorking { ProgressView() }
+            if vm.isWorking { ProgressView().tint(.white) }
         }
     }
 }
