@@ -23,14 +23,19 @@ struct RootView: View {
     }
 
     var body: some View {
-        switch session.phase {
-        case .loading:
-            ProgressView()
-                .task { await session.restore() }
-        case .onboarding:
-            OnboardingView(session: session, onboarding: onboarding)
-        case .active:
-            MainTabView(people: people, vault: vault, backend: backend, feed: feed)
+        Group {
+            switch session.phase {
+            case .loading:
+                ProgressView()
+                    .task { await session.restore() }
+            case .onboarding:
+                OnboardingView(session: session, onboarding: onboarding)
+            case .active:
+                MainTabView(people: people, vault: vault, backend: backend, feed: feed)
+            }
         }
+        .fontDesign(.rounded)
+        .tint(BrandColor.magenta)
+        .preferredColorScheme(.light)
     }
 }
