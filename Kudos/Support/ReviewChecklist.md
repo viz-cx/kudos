@@ -25,10 +25,10 @@ Spread the good. Recognise effort. Make someone's day.
 gratitude, appreciation, recognition, compliments, thank you, social, positive vibes, shoutout, celebrate, kind
 
 ### Support URL
-https://kudos.app/support
+https://viz-cx.github.io/kudos/support/
 
 ### Privacy Policy URL
-https://kudos.app/privacy
+https://viz-cx.github.io/kudos/privacy/
 
 ---
 
