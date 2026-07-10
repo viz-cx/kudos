@@ -42,6 +42,7 @@
 		9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE49D6290F28DA1E25B219 /* Credentials.swift */; };
 		965D22B2F690F85D76306AB1 /* PreviewMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */; };
 		9D410AE8296CDD27A005CC52 /* RecipientField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3470A74AF052CA161320AA /* RecipientField.swift */; };
+		9DADC9BD5F8C2D356BEBA5E8 /* WarmthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */; };
 		A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */; };
 		A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */; };
 		AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */; };
@@ -96,6 +97,7 @@
 		220615325AE0198E8940E58F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthLabel.swift; sourceTree = "<group>"; };
 		251D3C84DBA30E71B389F9F3 /* KudosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosTests.swift; sourceTree = "<group>"; };
+		2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthPicker.swift; sourceTree = "<group>"; };
 		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosFeedService.swift; sourceTree = "<group>"; };
 		32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoFeedMapperTests.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */,
 				7D05D278710AB1D3FAF11D6D /* PrimaryButton.swift */,
 				23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */,
+				2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */,
 				D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */,
 				AED9C010D67ED580C5854273 /* WarmthLabel.swift in Sources */,
+				9DADC9BD5F8C2D356BEBA5E8 /* WarmthPicker.swift in Sources */,
 				EB36B8067CC42DBCBAA73F3E /* WarmthSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
