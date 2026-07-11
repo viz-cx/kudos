@@ -13,6 +13,7 @@
 		0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC169C0805515057E36DA51 /* KudoDetailView.swift */; };
 		0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */; };
 		114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */; };
+		116361EA4E4A782D10534642 /* ConnectionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */; };
 		13AEB6C42FE576547AE9AC46 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */; };
 		15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E411B5BB3CCA622092FD7 /* KudoEvent.swift */; };
 		166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F1863C2909578AD72BFB0 /* RootView.swift */; };
@@ -67,6 +68,7 @@
 		CF870DB2FBD0E7383A29705F /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE76F390E2B51094394DE /* AccountService.swift */; };
 		D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7B911755DDEB97E84FECF9 /* SessionStore.swift */; };
 		D0B62CD115EEA33B0A7089A5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1D56A5608E013C740CBF123A /* CodeScanner */; };
+		D1B14232E1DB4C1C410E5C3B /* ConnectionSettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */; };
 		D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */; };
 		D7BE3AC6FAE2C08EB2385322 /* NodeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A19CDE1A1480264C8A2735 /* NodeEndpoint.swift */; };
 		D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5107182C903BEFE714B50A4 /* Warmth.swift */; };
@@ -107,6 +109,7 @@
 		02247A1507C6BE953971D8AE /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		03F56785470A2A47FC23AB3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClientConformanceTests.swift; sourceTree = "<group>"; };
+		159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsView.swift; sourceTree = "<group>"; };
 		15ABA1FE4943F412D6F70D2A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		173E411B5BB3CCA622092FD7 /* KudoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEvent.swift; sourceTree = "<group>"; };
 		1DFE49D6290F28DA1E25B219 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		8B4A29D07B133518F99450CE /* AppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorTests.swift; sourceTree = "<group>"; };
 		8EF8D9950352279112E9240E /* SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
 		8F1F1863C2909578AD72BFB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsUITests.swift; sourceTree = "<group>"; };
 		96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchService.swift; sourceTree = "<group>"; };
 		9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
 		9B7B911755DDEB97E84FECF9 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 		BDE0B907836F03A9616067EA /* KudosUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */,
 				C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */,
 				B303003CDF9FBF8844B8E02E /* KudosUITests.swift */,
 				02247A1507C6BE953971D8AE /* ScreenshotTests.swift */,
@@ -383,6 +388,7 @@
 		E0966E08B1D9199A26176CEF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */,
 				33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */,
 				220615325AE0198E8940E58F /* SettingsView.swift */,
 				FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */,
@@ -542,6 +548,7 @@
 				E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */,
 				05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */,
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,
+				116361EA4E4A782D10534642 /* ConnectionSettingsView.swift in Sources */,
 				AF7EF23BA97995BFAA3FC628 /* ConnectionSettingsViewModel.swift in Sources */,
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
@@ -590,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B14232E1DB4C1C410E5C3B /* ConnectionSettingsUITests.swift in Sources */,
 				A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */,
 				7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */,
 				F5E00303F216744B958C772D /* ScreenshotTests.swift in Sources */,
