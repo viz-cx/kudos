@@ -69,6 +69,7 @@
 		E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */; };
 		ED78272442B044FD22D0D2D4 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4487889DCCF31FDC2C831 /* Avatar.swift */; };
 		F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93CE12BE2E5158F87C17E73 /* OnboardingService.swift */; };
+		F5E00303F216744B958C772D /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02247A1507C6BE953971D8AE /* ScreenshotTests.swift */; };
 		F60DAA052AA4BE6B03756B56 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2FAA35853A302E6722F30 /* SectionHeader.swift */; };
 		F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */; };
 		FB3867F24E9559F163621D79 /* ProfileQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */; };
@@ -96,6 +97,7 @@
 
 /* Begin PBXFileReference section */
 		0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		02247A1507C6BE953971D8AE /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		03F56785470A2A47FC23AB3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		15ABA1FE4943F412D6F70D2A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		173E411B5BB3CCA622092FD7 /* KudoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEvent.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 			children = (
 				C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */,
 				B303003CDF9FBF8844B8E02E /* KudosUITests.swift */,
+				02247A1507C6BE953971D8AE /* ScreenshotTests.swift */,
 			);
 			path = KudosUITests;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 			files = (
 				A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */,
 				7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */,
+				F5E00303F216744B958C772D /* ScreenshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
