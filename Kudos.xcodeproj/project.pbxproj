@@ -21,6 +21,7 @@
 		1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */; };
 		260529DFE4F94287D6DBED89 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABA1FE4943F412D6F70D2A /* ProfileView.swift */; };
 		2718028C72B7FA5FB27CFF7E /* DesignSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */; };
+		2BE65A02FD0562C0FBC7BD5F /* NodeClientConformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */; };
 		2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A29D07B133518F99450CE /* AppErrorTests.swift */; };
 		2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */; };
 		32DD8C2035B4E2BE4EB1DB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		02247A1507C6BE953971D8AE /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		03F56785470A2A47FC23AB3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClientConformanceTests.swift; sourceTree = "<group>"; };
 		15ABA1FE4943F412D6F70D2A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		173E411B5BB3CCA622092FD7 /* KudoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEvent.swift; sourceTree = "<group>"; };
 		1DFE49D6290F28DA1E25B219 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */,
 				251D3C84DBA30E71B389F9F3 /* KudosTests.swift */,
 				6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */,
+				0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */,
 				C1F631688920E401F85A48BD /* NodeEndpointTests.swift */,
 				9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */,
 				D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */,
@@ -591,6 +594,7 @@
 				B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */,
 				B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */,
 				B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */,
+				2BE65A02FD0562C0FBC7BD5F /* NodeClientConformanceTests.swift in Sources */,
 				464F59BB5B30408085D8C618 /* NodeEndpointTests.swift in Sources */,
 				2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */,
 				AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */,
