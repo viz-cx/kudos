@@ -35,6 +35,7 @@
 		56652FDFFAE6366F6557DBF3 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312C1278D77F4E26DCE8A5A /* OnboardingViewModel.swift */; };
 		58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */; };
 		5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */; };
+		61E7BDF98E2D703820005675 /* ConnectionSettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */; };
 		636A22B13ED84DDE854988DF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB4990B4F9EFB6D46935D0 /* HomeViewModel.swift */; };
 		63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */; };
 		673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E1F261A9C748B2EB404B87 /* KudosApp.swift */; };
@@ -55,6 +56,7 @@
 		AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */; };
 		AED9C010D67ED580C5854273 /* WarmthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */; };
 		AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */; };
+		AF7EF23BA97995BFAA3FC628 /* ConnectionSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */; };
 		B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */; };
 		B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */; };
 		B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */; };
@@ -116,6 +118,7 @@
 		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosFeedService.swift; sourceTree = "<group>"; };
 		32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoFeedMapperTests.swift; sourceTree = "<group>"; };
+		33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsViewModel.swift; sourceTree = "<group>"; };
 		35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudget.swift; sourceTree = "<group>"; };
 		36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClient.swift; sourceTree = "<group>"; };
 		3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		575718AC04C0FE5D4E6C5C19 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialVault.swift; sourceTree = "<group>"; };
+		64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsViewModelTests.swift; sourceTree = "<group>"; };
 		665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudgetTests.swift; sourceTree = "<group>"; };
 		66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSettingsStore.swift; sourceTree = "<group>"; };
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 				8B4A29D07B133518F99450CE /* AppErrorTests.swift */,
 				665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */,
 				A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */,
+				64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */,
 				73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */,
 				0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */,
 				32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */,
@@ -378,6 +383,7 @@
 		E0966E08B1D9199A26176CEF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */,
 				220615325AE0198E8940E58F /* SettingsView.swift */,
 				FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */,
 			);
@@ -536,6 +542,7 @@
 				E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */,
 				05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */,
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,
+				AF7EF23BA97995BFAA3FC628 /* ConnectionSettingsViewModel.swift in Sources */,
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
 				E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */,
@@ -596,6 +603,7 @@
 				2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */,
 				F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */,
 				04FEB0EBB33AB4BB37D1969F /* BackendClientTests.swift in Sources */,
+				61E7BDF98E2D703820005675 /* ConnectionSettingsViewModelTests.swift in Sources */,
 				2718028C72B7FA5FB27CFF7E /* DesignSystemTests.swift in Sources */,
 				13AEB6C42FE576547AE9AC46 /* HomeViewModelTests.swift in Sources */,
 				B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */,
