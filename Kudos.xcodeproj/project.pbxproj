@@ -42,6 +42,7 @@
 		723AFD1ABE3490D505F36B4C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48647E87FE314D59DB423E8C /* OnboardingView.swift */; };
 		77DAA3E99CB237A0A202BC58 /* AppreciationBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */; };
 		7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B303003CDF9FBF8844B8E02E /* KudosUITests.swift */; };
+		815B67B0025A4E2ADBBD9D15 /* NodeSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */; };
 		8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0E093C55BEE284DBAF09F6 /* VIZ */; };
 		85EDAAE3B1D51DA392DD24B9 /* AccountSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */; };
 		927D94AE54A70722B854964A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634C74BF54D605126299E5A /* HomeView.swift */; };
@@ -64,6 +65,7 @@
 		CF870DB2FBD0E7383A29705F /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE76F390E2B51094394DE /* AccountService.swift */; };
 		D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7B911755DDEB97E84FECF9 /* SessionStore.swift */; };
 		D0B62CD115EEA33B0A7089A5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1D56A5608E013C740CBF123A /* CodeScanner */; };
+		D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */; };
 		D7BE3AC6FAE2C08EB2385322 /* NodeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A19CDE1A1480264C8A2735 /* NodeEndpoint.swift */; };
 		D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5107182C903BEFE714B50A4 /* Warmth.swift */; };
 		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
@@ -109,6 +111,7 @@
 		220615325AE0198E8940E58F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthLabel.swift; sourceTree = "<group>"; };
 		251D3C84DBA30E71B389F9F3 /* KudosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosTests.swift; sourceTree = "<group>"; };
+		2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSettingsStoreTests.swift; sourceTree = "<group>"; };
 		2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthPicker.swift; sourceTree = "<group>"; };
 		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosFeedService.swift; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialVault.swift; sourceTree = "<group>"; };
 		665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudgetTests.swift; sourceTree = "<group>"; };
+		66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSettingsStore.swift; sourceTree = "<group>"; };
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
 		6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModelTests.swift; sourceTree = "<group>"; };
 		73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTests.swift; sourceTree = "<group>"; };
@@ -255,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */,
+				66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */,
 				9B7B911755DDEB97E84FECF9 /* SessionStore.swift */,
 			);
 			path = Session;
@@ -318,6 +323,7 @@
 				6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */,
 				0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */,
 				C1F631688920E401F85A48BD /* NodeEndpointTests.swift */,
+				2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */,
 				9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */,
 				D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */,
 				D4E0D4B400EC36DE6152AB17 /* SecureRandomTests.swift */,
@@ -549,6 +555,7 @@
 				FD4C7B2F7D74D7204FC53F1A /* MainTabView.swift in Sources */,
 				A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */,
 				D7BE3AC6FAE2C08EB2385322 /* NodeEndpoint.swift in Sources */,
+				815B67B0025A4E2ADBBD9D15 /* NodeSettingsStore.swift in Sources */,
 				F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */,
 				723AFD1ABE3490D505F36B4C /* OnboardingView.swift in Sources */,
 				56652FDFFAE6366F6557DBF3 /* OnboardingViewModel.swift in Sources */,
@@ -596,6 +603,7 @@
 				B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */,
 				2BE65A02FD0562C0FBC7BD5F /* NodeClientConformanceTests.swift in Sources */,
 				464F59BB5B30408085D8C618 /* NodeEndpointTests.swift in Sources */,
+				D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */,
 				2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */,
 				AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */,
 				67768B17ABA6FED9A3FA0176 /* SecureRandomTests.swift in Sources */,
