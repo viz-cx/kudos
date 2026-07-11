@@ -70,14 +70,14 @@ Camera permission: Used only for scanning QR codes in the recipient search field
 - [ ] Privacy Policy URL resolves and is current
 
 ### Permissions
-- [ ] `NSCameraUsageDescription` set ("Scan a friend's code to send them kudos.")
+- [x] `NSCameraUsageDescription` set ("Scan a friend's code to send them kudos.")
 - [ ] No other sensitive permissions requested unnecessarily
 
 ### Build
 - [x] Runs without crashes on iPhone (latest iOS) — build + unit (44 tests, 17 suites) + UI (5 tests, 2 suites) pass clean
 - [ ] Runs without crashes on iPad (if universal)
 - [x] No placeholder UI or lorem-ipsum text in the binary
-- [x] App icon set — single 1024×1024, no alpha channel (placeholder; replace with final artwork before release)
+- [x] App icon set — single 1024×1024, no alpha channel (final: gradient heart on peach canvas, matches app UI; reproducible via `tools/GenerateAppIcon.swift`)
 - [x] Launch screen visible and branded (LaunchBackground color)
 
 ### App Store Connect
