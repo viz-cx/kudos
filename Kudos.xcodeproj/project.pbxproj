@@ -13,6 +13,7 @@
 		0BF2601093379389EACC3584 /* KudoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC169C0805515057E36DA51 /* KudoDetailView.swift */; };
 		0ECF260DB970A94CFBD90990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE2CE43A30CB96BD991B2 /* ProfileViewModel.swift */; };
 		114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE8F0E7BC9E774C44F01BE /* KudosViewModel.swift */; };
+		116361EA4E4A782D10534642 /* ConnectionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */; };
 		13AEB6C42FE576547AE9AC46 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */; };
 		15679E7CE4E63F80705290BC /* KudoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E411B5BB3CCA622092FD7 /* KudoEvent.swift */; };
 		166C17CDE444DEEFC55A5CE2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F1863C2909578AD72BFB0 /* RootView.swift */; };
@@ -21,18 +22,21 @@
 		1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */; };
 		260529DFE4F94287D6DBED89 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABA1FE4943F412D6F70D2A /* ProfileView.swift */; };
 		2718028C72B7FA5FB27CFF7E /* DesignSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */; };
+		2BE65A02FD0562C0FBC7BD5F /* NodeClientConformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */; };
 		2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A29D07B133518F99450CE /* AppErrorTests.swift */; };
 		2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */; };
 		32DD8C2035B4E2BE4EB1DB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D41243745D6C2F6DDA1EDB /* Assets.xcassets */; };
 		38F23EB20D433B1D0F046831 /* ReviewChecklist.md in Resources */ = {isa = PBXBuildFile; fileRef = CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */; };
 		3BE561C2B5F2F638B6F331ED /* SessionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF3A3A2FE1B41EEAD4BF5A /* SessionStoreTests.swift */; };
 		4588176E03623D5D7430DBE6 /* PeopleSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */; };
+		464F59BB5B30408085D8C618 /* NodeEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F631688920E401F85A48BD /* NodeEndpointTests.swift */; };
 		47B3DB182A2DADBFA7D7401E /* SessionStoreTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35084045000584E7DCEF4F6 /* SessionStoreTestHelper.swift */; };
 		51E65D4C69F1CFD8197134DD /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6CEE31FC0A024BE35968013D /* KeychainAccess */; };
 		53F078EA4CE2200B43A04BA5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220615325AE0198E8940E58F /* SettingsView.swift */; };
 		56652FDFFAE6366F6557DBF3 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312C1278D77F4E26DCE8A5A /* OnboardingViewModel.swift */; };
 		58C3A9DB9CC2AC797BF05CB3 /* KudoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEB0CB6ABEC162A5983B12 /* KudoCard.swift */; };
 		5CCA02B3637335E7CD8FC3BC /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */; };
+		61E7BDF98E2D703820005675 /* ConnectionSettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */; };
 		636A22B13ED84DDE854988DF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB4990B4F9EFB6D46935D0 /* HomeViewModel.swift */; };
 		63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */; };
 		673BC5B89F64ADE34109A9AA /* KudosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E1F261A9C748B2EB404B87 /* KudosApp.swift */; };
@@ -40,6 +44,7 @@
 		723AFD1ABE3490D505F36B4C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48647E87FE314D59DB423E8C /* OnboardingView.swift */; };
 		77DAA3E99CB237A0A202BC58 /* AppreciationBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */; };
 		7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B303003CDF9FBF8844B8E02E /* KudosUITests.swift */; };
+		815B67B0025A4E2ADBBD9D15 /* NodeSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */; };
 		8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0E093C55BEE284DBAF09F6 /* VIZ */; };
 		85EDAAE3B1D51DA392DD24B9 /* AccountSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */; };
 		927D94AE54A70722B854964A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634C74BF54D605126299E5A /* HomeView.swift */; };
@@ -52,6 +57,7 @@
 		AC4496C9701C8C15EC4EEEDA /* KudosFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */; };
 		AED9C010D67ED580C5854273 /* WarmthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */; };
 		AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */; };
+		AF7EF23BA97995BFAA3FC628 /* ConnectionSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */; };
 		B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */; };
 		B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */; };
 		B34C3EBFAD423FB3CEEC5039 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */; };
@@ -62,6 +68,9 @@
 		CF870DB2FBD0E7383A29705F /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE76F390E2B51094394DE /* AccountService.swift */; };
 		D00FB8380E4F55A66456751C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7B911755DDEB97E84FECF9 /* SessionStore.swift */; };
 		D0B62CD115EEA33B0A7089A5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1D56A5608E013C740CBF123A /* CodeScanner */; };
+		D1B14232E1DB4C1C410E5C3B /* ConnectionSettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */; };
+		D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */; };
+		D7BE3AC6FAE2C08EB2385322 /* NodeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A19CDE1A1480264C8A2735 /* NodeEndpoint.swift */; };
 		D7F14BAD1F83D0A0270438EE /* Warmth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5107182C903BEFE714B50A4 /* Warmth.swift */; };
 		DB21EA5E75B898C6240E2E9C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCF8113ED6F59E50DC596A4 /* ConfettiSwiftUI */; };
 		E278E6CE1A8B19374C082923 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575718AC04C0FE5D4E6C5C19 /* AppError.swift */; };
@@ -99,16 +108,20 @@
 		0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		02247A1507C6BE953971D8AE /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		03F56785470A2A47FC23AB3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClientConformanceTests.swift; sourceTree = "<group>"; };
+		159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsView.swift; sourceTree = "<group>"; };
 		15ABA1FE4943F412D6F70D2A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		173E411B5BB3CCA622092FD7 /* KudoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoEvent.swift; sourceTree = "<group>"; };
 		1DFE49D6290F28DA1E25B219 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		220615325AE0198E8940E58F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		23DA73A22520AB4A9D568AD5 /* WarmthLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthLabel.swift; sourceTree = "<group>"; };
 		251D3C84DBA30E71B389F9F3 /* KudosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosTests.swift; sourceTree = "<group>"; };
+		2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSettingsStoreTests.swift; sourceTree = "<group>"; };
 		2CB4F27F8F28B3E6C889EEE3 /* WarmthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthPicker.swift; sourceTree = "<group>"; };
 		2E628E5A6D3AAD74C9F43E0A /* Kudos.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Kudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3128A091B91A5BA42A1129B6 /* KudosFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosFeedService.swift; sourceTree = "<group>"; };
 		32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoFeedMapperTests.swift; sourceTree = "<group>"; };
+		33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsViewModel.swift; sourceTree = "<group>"; };
 		35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudget.swift; sourceTree = "<group>"; };
 		36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeClient.swift; sourceTree = "<group>"; };
 		3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
@@ -119,7 +132,9 @@
 		575718AC04C0FE5D4E6C5C19 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		59D7FC06A5601F51EC10A6C8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialVault.swift; sourceTree = "<group>"; };
+		64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsViewModelTests.swift; sourceTree = "<group>"; };
 		665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreciationBudgetTests.swift; sourceTree = "<group>"; };
+		66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSettingsStore.swift; sourceTree = "<group>"; };
 		688D9DA4B4342D6ADC1CB1D6 /* InviteRedeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRedeemView.swift; sourceTree = "<group>"; };
 		6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosViewModelTests.swift; sourceTree = "<group>"; };
 		73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTests.swift; sourceTree = "<group>"; };
@@ -132,10 +147,12 @@
 		8B4A29D07B133518F99450CE /* AppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorTests.swift; sourceTree = "<group>"; };
 		8EF8D9950352279112E9240E /* SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
 		8F1F1863C2909578AD72BFB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsUITests.swift; sourceTree = "<group>"; };
 		96D8284E2876516B0DFDD021 /* PeopleSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchService.swift; sourceTree = "<group>"; };
 		9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
 		9B7B911755DDEB97E84FECF9 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClientTests.swift; sourceTree = "<group>"; };
+		A1A19CDE1A1480264C8A2735 /* NodeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEndpoint.swift; sourceTree = "<group>"; };
 		A312C1278D77F4E26DCE8A5A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSnapshot.swift; sourceTree = "<group>"; };
 		AF18EF37EA057FC63E956E8E /* KudosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudosView.swift; sourceTree = "<group>"; };
@@ -148,6 +165,7 @@
 		BAB624064A17A494A2FD1F4E /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		BC64E2197D6E9D38C2060761 /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFlowUITests.swift; sourceTree = "<group>"; };
+		C1F631688920E401F85A48BD /* NodeEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEndpointTests.swift; sourceTree = "<group>"; };
 		C9F2FAA35853A302E6722F30 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		CDD780F9CCB0B6018C80EBF8 /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
 		CE473543D9A0C3CC80F4FF12 /* ReviewChecklist.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReviewChecklist.md; sourceTree = "<group>"; };
@@ -249,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				5D510F7B63C1B4EF5053F7A3 /* CredentialVault.swift */,
+				66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */,
 				9B7B911755DDEB97E84FECF9 /* SessionStore.swift */,
 			);
 			path = Session;
@@ -305,11 +324,15 @@
 				8B4A29D07B133518F99450CE /* AppErrorTests.swift */,
 				665216EFBFE0C54408029B1F /* AppreciationBudgetTests.swift */,
 				A0B3D76AC0C3C477BE1861BB /* BackendClientTests.swift */,
+				64CC074F31568E5D0E0BA7ED /* ConnectionSettingsViewModelTests.swift */,
 				73E1C9CD76C9CC8ED9794AD1 /* DesignSystemTests.swift */,
 				0180DE9D8713FD6601AE225F /* HomeViewModelTests.swift */,
 				32383C5BEA5E36FCE7171739 /* KudoFeedMapperTests.swift */,
 				251D3C84DBA30E71B389F9F3 /* KudosTests.swift */,
 				6E0C45DF6CC41765C67D6CE6 /* KudosViewModelTests.swift */,
+				0F70DFCA0B082399AF134450 /* NodeClientConformanceTests.swift */,
+				C1F631688920E401F85A48BD /* NodeEndpointTests.swift */,
+				2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */,
 				9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */,
 				D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */,
 				D4E0D4B400EC36DE6152AB17 /* SecureRandomTests.swift */,
@@ -331,6 +354,7 @@
 		BDE0B907836F03A9616067EA /* KudosUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93802D26564481EB9DF80D67 /* ConnectionSettingsUITests.swift */,
 				C1D1D8D87EA4F490AF5B3EE7 /* GuestFlowUITests.swift */,
 				B303003CDF9FBF8844B8E02E /* KudosUITests.swift */,
 				02247A1507C6BE953971D8AE /* ScreenshotTests.swift */,
@@ -364,6 +388,8 @@
 		E0966E08B1D9199A26176CEF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				159D82F94A81FEAF6A2C6383 /* ConnectionSettingsView.swift */,
+				33171E1F37A5D809D9D156A0 /* ConnectionSettingsViewModel.swift */,
 				220615325AE0198E8940E58F /* SettingsView.swift */,
 				FDAAB9D4B41E61012BEAE817 /* SettingsViewModel.swift */,
 			);
@@ -385,6 +411,7 @@
 			children = (
 				575718AC04C0FE5D4E6C5C19 /* AppError.swift */,
 				36A2E41C8FF28EABA8FD2A12 /* NodeClient.swift */,
+				A1A19CDE1A1480264C8A2735 /* NodeEndpoint.swift */,
 				8EF8D9950352279112E9240E /* SecureRandom.swift */,
 				D4C599B21B40529959585EE7 /* Domain */,
 				94E0F43C1E13AAA38D373E33 /* Services */,
@@ -521,6 +548,8 @@
 				E97ACC84E486EBAF470BCFC5 /* BackendClient.swift in Sources */,
 				05DB071036D0DF8AC24BB703 /* BrandColor.swift in Sources */,
 				63EAAA2FA82905DDABF59085 /* Color+Hex.swift in Sources */,
+				116361EA4E4A782D10534642 /* ConnectionSettingsView.swift in Sources */,
+				AF7EF23BA97995BFAA3FC628 /* ConnectionSettingsViewModel.swift in Sources */,
 				1F58BF4F77508B21803547B1 /* CredentialVault.swift in Sources */,
 				9468654391D8EEF4AA6FA3A6 /* Credentials.swift in Sources */,
 				E37BDBCA6AFD366A2E9FDA81 /* EmptyState.swift in Sources */,
@@ -539,6 +568,8 @@
 				114C78D219E82DA0A5E63057 /* KudosViewModel.swift in Sources */,
 				FD4C7B2F7D74D7204FC53F1A /* MainTabView.swift in Sources */,
 				A834069C9B1999DA324386B8 /* NodeClient.swift in Sources */,
+				D7BE3AC6FAE2C08EB2385322 /* NodeEndpoint.swift in Sources */,
+				815B67B0025A4E2ADBBD9D15 /* NodeSettingsStore.swift in Sources */,
 				F4A01B1EAFCD2BA3A9C89712 /* OnboardingService.swift in Sources */,
 				723AFD1ABE3490D505F36B4C /* OnboardingView.swift in Sources */,
 				56652FDFFAE6366F6557DBF3 /* OnboardingViewModel.swift in Sources */,
@@ -566,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B14232E1DB4C1C410E5C3B /* ConnectionSettingsUITests.swift in Sources */,
 				A9C21E85E77DB9E203268254 /* GuestFlowUITests.swift in Sources */,
 				7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */,
 				F5E00303F216744B958C772D /* ScreenshotTests.swift in Sources */,
@@ -579,11 +611,15 @@
 				2C181FC986D50178753B6535 /* AppErrorTests.swift in Sources */,
 				F6E84ABD315108336EFF0A2F /* AppreciationBudgetTests.swift in Sources */,
 				04FEB0EBB33AB4BB37D1969F /* BackendClientTests.swift in Sources */,
+				61E7BDF98E2D703820005675 /* ConnectionSettingsViewModelTests.swift in Sources */,
 				2718028C72B7FA5FB27CFF7E /* DesignSystemTests.swift in Sources */,
 				13AEB6C42FE576547AE9AC46 /* HomeViewModelTests.swift in Sources */,
 				B13A47668A5481A44D73FB4F /* KudoFeedMapperTests.swift in Sources */,
 				B8A9C9F703B0ED574E63CCE0 /* KudosTests.swift in Sources */,
 				B088DC19227DD64572EEE275 /* KudosViewModelTests.swift in Sources */,
+				2BE65A02FD0562C0FBC7BD5F /* NodeClientConformanceTests.swift in Sources */,
+				464F59BB5B30408085D8C618 /* NodeEndpointTests.swift in Sources */,
+				D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */,
 				2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */,
 				AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */,
 				67768B17ABA6FED9A3FA0176 /* SecureRandomTests.swift in Sources */,

@@ -1,11 +1,32 @@
 import Foundation
 import VIZ
 
-actor NodeClient {
-    private let client: VIZ.Client
+protocol NodeConfiguring: Sendable {
+    func reconfigure(address: URL) async
+}
 
-    init(address: URL = URL(string: "https://node.viz.cx")!) {
+protocol NodeProbing: Sendable {
+    func probe(_ address: URL) async throws -> UInt32
+}
+
+actor NodeClient: NodeConfiguring {
+    private var client: VIZ.Client
+
+    init(address: URL = NodeEndpoint.defaultURL) {
         client = VIZ.Client(address: address)
+    }
+
+    /// Hot-swaps the endpoint. Every service holds the same `NodeClient`
+    /// reference, so their next request uses the new node.
+    func reconfigure(address: URL) {
+        client = VIZ.Client(address: address)
+    }
+
+    /// Validates a candidate node without disturbing the live client.
+    static func probe(_ address: URL) async throws -> UInt32 {
+        let probeClient = VIZ.Client(address: address)
+        let props = try await probeClient.send(API.GetDynamicGlobalProperties())
+        return UInt32(props.headBlockNumber)
     }
 
     func account(_ name: String) async throws -> API.ExtendedAccount? {
@@ -26,5 +47,11 @@ actor NodeClient {
         )
         guard let stx = try? tx.sign(usingKey: key) else { throw AppError.signing }
         _ = try await client.send(API.BroadcastTransaction(transaction: stx))
+    }
+}
+
+struct LiveNodeProbe: NodeProbing {
+    func probe(_ address: URL) async throws -> UInt32 {
+        try await NodeClient.probe(address)
     }
 }

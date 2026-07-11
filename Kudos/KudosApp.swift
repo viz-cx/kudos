@@ -8,6 +8,7 @@ struct KudosApp: App {
     private let vault: CredentialVault
     private let backend: BackendClient
     private let feed: any KudosFeedProviding
+    private let nodeSettings: NodeSettingsStore
 
     init() {
         let vault = CredentialVault()
@@ -28,11 +29,12 @@ struct KudosApp: App {
             self.vault = vault
             self.backend = BackendClient()
             self.feed = PreviewFeedMock()
+            self.nodeSettings = NodeSettingsStore(configuring: PreviewNodeConfiguring())
             return
         }
         #endif
 
-        let node = NodeClient()
+        let node = NodeClient(address: NodeSettingsStore.savedURL())
         let backend = BackendClient()
         let onboarding = LiveOnboardingService(backend: backend)
         let session = SessionStore(
@@ -47,12 +49,14 @@ struct KudosApp: App {
         self.vault = vault
         self.backend = backend
         self.feed = LiveKudosFeedService(node: node)
+        self.nodeSettings = NodeSettingsStore(configuring: node)
     }
 
     var body: some Scene {
         WindowGroup {
             RootView(onboarding: onboarding, people: people, vault: vault, backend: backend, feed: feed)
                 .environment(session)
+                .environment(nodeSettings)
         }
     }
 }

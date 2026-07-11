@@ -40,11 +40,8 @@ struct SettingsView: View {
                 }
             }
             Section("Advanced") {
-                NavigationLink("Connection settings") {
-                    Text("Connection configuration coming soon.")
-                        .foregroundStyle(.secondary)
-                        .padding()
-                        .navigationTitle("Connection settings")
+                NavigationLink("Connection") {
+                    ConnectionSettingsView()
                 }
             }
             Section {
@@ -92,4 +89,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView(vault: CredentialVault(), backend: BackendClient())
         .environment(SessionStore.previewActive)
+        .environment(NodeSettingsStore(configuring: PreviewNodeConfiguring()))
 }

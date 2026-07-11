@@ -52,6 +52,10 @@ final class PreviewSessionStore: @unchecked Sendable {
     }
 }
 
+struct PreviewNodeConfiguring: NodeConfiguring {
+    func reconfigure(address: URL) async {}
+}
+
 extension SessionStore {
     /// A pre-configured active session for use in SwiftUI previews.
     @MainActor static var previewActive: SessionStore {
