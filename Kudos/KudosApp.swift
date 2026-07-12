@@ -45,7 +45,7 @@ struct KudosApp: App {
         )
         self._session = State(initialValue: session)
         self.onboarding = onboarding
-        self.people = LivePeopleSearchService(backend: backend)
+        self.people = NodePeopleSearchService(lookup: node)
         self.vault = vault
         self.backend = backend
         self.feed = LiveKudosFeedService(node: node)
