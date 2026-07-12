@@ -45,6 +45,7 @@
 		77DAA3E99CB237A0A202BC58 /* AppreciationBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB92A0101CDE1A46B1255B /* AppreciationBudget.swift */; };
 		7DF5F76E40C47AB1847E0652 /* KudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B303003CDF9FBF8844B8E02E /* KudosUITests.swift */; };
 		815B67B0025A4E2ADBBD9D15 /* NodeSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6229ED7B652FA9F2654E6 /* NodeSettingsStore.swift */; };
+		849944D4C7DABB8563C643A1 /* PeopleSearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450280919B5350CE51E70E51 /* PeopleSearchServiceTests.swift */; };
 		8560CD2263AD89DA24F5BB02 /* VIZ in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0E093C55BEE284DBAF09F6 /* VIZ */; };
 		85EDAAE3B1D51DA392DD24B9 /* AccountSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B6884C0FB792AE4878BAF /* AccountSnapshot.swift */; };
 		927D94AE54A70722B854964A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B634C74BF54D605126299E5A /* HomeView.swift */; };
@@ -127,6 +128,7 @@
 		3CDD2FBFFD48E0AB802A019F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		3EC169C0805515057E36DA51 /* KudoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudoDetailView.swift; sourceTree = "<group>"; };
 		3ED168E56943CC31BF43CAEB /* ProfileQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileQRView.swift; sourceTree = "<group>"; };
+		450280919B5350CE51E70E51 /* PeopleSearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchServiceTests.swift; sourceTree = "<group>"; };
 		48647E87FE314D59DB423E8C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		56BAA8A4BB7708D688A108B8 /* KudosTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KudosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		575718AC04C0FE5D4E6C5C19 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				C1F631688920E401F85A48BD /* NodeEndpointTests.swift */,
 				2521C34F13D2997677E75C9B /* NodeSettingsStoreTests.swift */,
 				9ACCCC31B5D9E4E99D7A1CB5 /* OnboardingViewModelTests.swift */,
+				450280919B5350CE51E70E51 /* PeopleSearchServiceTests.swift */,
 				D4B2E30AF6AB5214C968592F /* ProfileViewModelTests.swift */,
 				D4E0D4B400EC36DE6152AB17 /* SecureRandomTests.swift */,
 				F35084045000584E7DCEF4F6 /* SessionStoreTestHelper.swift */,
@@ -621,6 +624,7 @@
 				464F59BB5B30408085D8C618 /* NodeEndpointTests.swift in Sources */,
 				D4C7374F426FB0ACDBB53BB2 /* NodeSettingsStoreTests.swift in Sources */,
 				2F510986AAAE5531C261EBBB /* OnboardingViewModelTests.swift in Sources */,
+				849944D4C7DABB8563C643A1 /* PeopleSearchServiceTests.swift in Sources */,
 				AEE8F2C5A13D412137DEFBA1 /* ProfileViewModelTests.swift in Sources */,
 				67768B17ABA6FED9A3FA0176 /* SecureRandomTests.swift in Sources */,
 				47B3DB182A2DADBFA7D7401E /* SessionStoreTestHelper.swift in Sources */,

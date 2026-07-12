@@ -9,7 +9,27 @@ protocol NodeProbing: Sendable {
     func probe(_ address: URL) async throws -> UInt32
 }
 
-actor NodeClient: NodeConfiguring {
+/// Prefix-search over existing account names. Backed by the node's
+/// `database_api.lookup_accounts`; abstracted so callers can be tested
+/// without a live node.
+protocol AccountLookup: Sendable {
+    func lookupAccounts(prefix: String, limit: UInt32) async throws -> [String]
+}
+
+/// `database_api.lookup_accounts(lower_bound_name, limit)` — returns account
+/// names alphabetically from `lowerBound`, so results must be prefix-filtered
+/// by the caller. The VIZ lib already routes this method to `database_api`.
+struct LookupAccounts: VIZ.Request {
+    typealias Response = [String]
+    let method = "lookup_accounts"
+    var params: RequestParams<AnyEncodable>? {
+        RequestParams([AnyEncodable(lowerBound), AnyEncodable(limit)])
+    }
+    let lowerBound: String
+    let limit: UInt32
+}
+
+actor NodeClient: NodeConfiguring, AccountLookup {
     private var client: VIZ.Client
 
     init(address: URL = NodeEndpoint.defaultURL) {
@@ -35,6 +55,10 @@ actor NodeClient: NodeConfiguring {
 
     func accountHistory(_ name: String, from: Int = -1, limit: Int = 100) async throws -> [API.AccountHistoryObject] {
         try await client.send(API.GetAccountHistory(account: name, from: from, limit: limit))
+    }
+
+    func lookupAccounts(prefix: String, limit: UInt32 = 20) async throws -> [String] {
+        try await client.send(LookupAccounts(lowerBound: prefix, limit: limit))
     }
 
     func broadcast(_ operation: any OperationType, signedWith key: PrivateKey) async throws {

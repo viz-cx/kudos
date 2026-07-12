@@ -20,6 +20,7 @@ struct RecipientField: View {
     @Binding var text: String
     let suggestions: [Person]
     let onQuery: (String) -> Void
+    let onSelect: (Person) -> Void
 
     @State private var showScanner = false
 
@@ -46,8 +47,7 @@ struct RecipientField: View {
                 VStack(alignment: .leading, spacing: 0) {
                     ForEach(suggestions) { person in
                         Button {
-                            text = person.username
-                            onQuery("")
+                            onSelect(person)
                         } label: {
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(person.displayName ?? person.username)
@@ -89,6 +89,6 @@ struct RecipientField: View {
         Person(username: "alice", displayName: "Alice"),
         Person(username: "bob", displayName: nil)
     ]
-    RecipientField(text: $text, suggestions: people, onQuery: { _ in })
+    RecipientField(text: $text, suggestions: people, onQuery: { _ in }, onSelect: { text = $0.username })
         .padding()
 }

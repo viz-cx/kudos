@@ -43,7 +43,8 @@ struct KudosView: View {
                 RecipientField(
                     text: $vm.recipient,
                     suggestions: vm.suggestions,
-                    onQuery: { q in Task { await vm.search(q) } }
+                    onQuery: { vm.queryChanged($0) },
+                    onSelect: { vm.selectSuggestion($0) }
                 )
 
                 WarmthPicker(fraction: $vm.warmthFraction, max: session.budget.fraction)
