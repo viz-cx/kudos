@@ -934,8 +934,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/viz-blockchain/viz-swift-lib";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = revision;
+				revision = a793a878b99d3d8d336c819d0449f8af86940a9e;
 			};
 		};
 		B253FF65D5017DF1762D4C03 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {

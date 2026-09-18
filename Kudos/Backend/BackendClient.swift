@@ -4,7 +4,7 @@ struct BackendClient: Sendable {
     private let baseURL: URL
     private let session: URLSession
 
-    init(baseURL: URL = URL(string: "https://viz.cx/api")!, session: URLSession = .shared) {
+    init(baseURL: URL = URL(string: "https://api.viz.cx")!, session: URLSession = .shared) {
         self.baseURL = baseURL
         self.session = session
     }
